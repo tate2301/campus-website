@@ -1,0 +1,27 @@
+/* Corelith Campus tokens. Values are the ones the canvas boards are rendered with (source/common.py, source/ds.py). */
+:root {
+  /* ink and surfaces */
+  --ink: #0b0c14; --ink-2: #3b3d47; --muted: #6b6d78; --faint: #9a9ea9; --line: #e7e9ef;
+  --plate: #f4f5f7; --ground: #f7f8fa; --tray: #eceef2; --white: #ffffff;
+  /* accent and product */
+  --accent: #2563eb; --accent-hover: #1d4ed8; --accent-tint: #e8effd; --accent-ring: #bfd3fb;
+  --campus: #7c5cff; --campus-tint: #efeaff; --corelith-mark: #0F62FE;
+  /* status */
+  --ok: #12805c; --ok-tint: #e5f4ec; --warn: #a15c07; --warn-tint: #fdf1dc; --bad: #be123c; --bad-tint: #fde7ec;
+  /* type */
+  --font-sans: 'Atkinson Hyperlegible Next', sans-serif;   /* everything on the site */
+  --font-ui: 'Inter', sans-serif;                          /* inside phone screens only */
+  --font-mono: 'IBM Plex Mono', monospace;                 /* times, codes, references */
+  --font-serif: 'Newsreader', serif;                       /* the authority report document only */
+  /* radii */
+  --r-input: 12px; --r-card: 16px; --r-photo: 24px; --r-plate: 28px; --r-pill: 999px;
+  /* shadows */
+  --sh-card: 0 1px 2px rgba(11,12,20,.06), 0 16px 36px -18px rgba(11,12,20,.30);
+  --sh-raised: 0 2px 4px rgba(11,12,20,.06), 0 28px 56px -24px rgba(11,12,20,.38);
+  --sh-outline: 0 0 0 1px var(--line);
+  /* the dotted plate behind drawings and cards */
+  --dots: var(--ground) radial-gradient(#dfe2e8 1px, transparent 1.2px) 0 0 / 22px 22px;
+  /* layout */
+  --page-desktop: 1440px; --gutter-desktop: 120px; --content-desktop: 1200px; --section-gap-desktop: 160px;
+  --page-phone: 390px; --gutter-phone: 20px; --section-gap-phone: 96px;
+}

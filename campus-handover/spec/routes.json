@@ -1,0 +1,932 @@
+{
+ "site": "Corelith Campus",
+ "domain": "campus.corelith.co.zw",
+ "app_domain": "app.campus.corelith.co.zw",
+ "routes": [
+  {
+   "route": "/",
+   "slug": "home",
+   "title": "Home",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/home.html",
+    "reference": "reference/desktop/home.jpg",
+    "reference_px": [
+     1440,
+     10580
+    ],
+    "height": 10580
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/home.html",
+    "reference": "reference/phone/home.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     27082
+    ],
+    "height": 13541
+   }
+  },
+  {
+   "route": "/solutions",
+   "slug": "solutions",
+   "title": "Solutions",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/solutions.html",
+    "reference": "reference/desktop/solutions.jpg",
+    "reference_px": [
+     1440,
+     6069
+    ],
+    "height": 6069
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/solutions.html",
+    "reference": "reference/phone/solutions.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     15884
+    ],
+    "height": 7942
+   }
+  },
+  {
+   "route": "/solutions/academics",
+   "slug": "solutions-academics",
+   "title": "Academics and student life",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/solutions-academics.html",
+    "reference": "reference/desktop/solutions-academics.jpg",
+    "reference_px": [
+     1440,
+     6326
+    ],
+    "height": 6326
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/solutions-academics.html",
+    "reference": "reference/phone/solutions-academics.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     13920
+    ],
+    "height": 6960
+   }
+  },
+  {
+   "route": "/solutions/admissions",
+   "slug": "solutions-admissions",
+   "title": "Admissions and enrolment",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/solutions-admissions.html",
+    "reference": "reference/desktop/solutions-admissions.jpg",
+    "reference_px": [
+     1440,
+     5771
+    ],
+    "height": 5771
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/solutions-admissions.html",
+    "reference": "reference/phone/solutions-admissions.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     12272
+    ],
+    "height": 6136
+   }
+  },
+  {
+   "route": "/solutions/fees",
+   "slug": "solutions-fees",
+   "title": "Fees and billing",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/solutions-fees.html",
+    "reference": "reference/desktop/solutions-fees.jpg",
+    "reference_px": [
+     1440,
+     5676
+    ],
+    "height": 5676
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/solutions-fees.html",
+    "reference": "reference/phone/solutions-fees.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     12280
+    ],
+    "height": 6140
+   }
+  },
+  {
+   "route": "/solutions/accounting",
+   "slug": "solutions-accounting",
+   "title": "Accounting",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/solutions-accounting.html",
+    "reference": "reference/desktop/solutions-accounting.jpg",
+    "reference_px": [
+     1440,
+     5771
+    ],
+    "height": 5771
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/solutions-accounting.html",
+    "reference": "reference/phone/solutions-accounting.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     11952
+    ],
+    "height": 5976
+   }
+  },
+  {
+   "route": "/solutions/hr-payroll",
+   "slug": "solutions-hr-payroll",
+   "title": "HR and payroll",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/solutions-hr-payroll.html",
+    "reference": "reference/desktop/solutions-hr-payroll.jpg",
+    "reference_px": [
+     1440,
+     5739
+    ],
+    "height": 5739
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/solutions-hr-payroll.html",
+    "reference": "reference/phone/solutions-hr-payroll.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     12098
+    ],
+    "height": 6049
+   }
+  },
+  {
+   "route": "/solutions/boarding",
+   "slug": "solutions-boarding",
+   "title": "Boarding and welfare",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/solutions-boarding.html",
+    "reference": "reference/desktop/solutions-boarding.jpg",
+    "reference_px": [
+     1440,
+     5739
+    ],
+    "height": 5739
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/solutions-boarding.html",
+    "reference": "reference/phone/solutions-boarding.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     12164
+    ],
+    "height": 6082
+   }
+  },
+  {
+   "route": "/solutions/stock",
+   "slug": "solutions-stock",
+   "title": "Stock and facilities",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/solutions-stock.html",
+    "reference": "reference/desktop/solutions-stock.jpg",
+    "reference_px": [
+     1440,
+     5739
+    ],
+    "height": 5739
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/solutions-stock.html",
+    "reference": "reference/phone/solutions-stock.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     11902
+    ],
+    "height": 5951
+   }
+  },
+  {
+   "route": "/solutions/communication",
+   "slug": "solutions-communication",
+   "title": "Communication",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/solutions-communication.html",
+    "reference": "reference/desktop/solutions-communication.jpg",
+    "reference_px": [
+     1440,
+     5739
+    ],
+    "height": 5739
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/solutions-communication.html",
+    "reference": "reference/phone/solutions-communication.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     11942
+    ],
+    "height": 5971
+   }
+  },
+  {
+   "route": "/solutions/insights",
+   "slug": "solutions-insights",
+   "title": "Insights",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/solutions-insights.html",
+    "reference": "reference/desktop/solutions-insights.jpg",
+    "reference_px": [
+     1440,
+     5676
+    ],
+    "height": 5676
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/solutions-insights.html",
+    "reference": "reference/phone/solutions-insights.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     12066
+    ],
+    "height": 6033
+   }
+  },
+  {
+   "route": "/who-we-serve",
+   "slug": "who-we-serve",
+   "title": "Who we serve",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/who-we-serve.html",
+    "reference": "reference/desktop/who-we-serve.jpg",
+    "reference_px": [
+     1440,
+     4524
+    ],
+    "height": 4524
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/who-we-serve.html",
+    "reference": "reference/phone/who-we-serve.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     12694
+    ],
+    "height": 6347
+   }
+  },
+  {
+   "route": "/who-we-serve/day",
+   "slug": "who-we-serve-day",
+   "title": "Day schools",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/who-we-serve-day.html",
+    "reference": "reference/desktop/who-we-serve-day.jpg",
+    "reference_px": [
+     1440,
+     6185
+    ],
+    "height": 6185
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/who-we-serve-day.html",
+    "reference": "reference/phone/who-we-serve-day.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     15082
+    ],
+    "height": 7541
+   }
+  },
+  {
+   "route": "/who-we-serve/boarding",
+   "slug": "who-we-serve-boarding",
+   "title": "Boarding schools",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/who-we-serve-boarding.html",
+    "reference": "reference/desktop/who-we-serve-boarding.jpg",
+    "reference_px": [
+     1440,
+     6050
+    ],
+    "height": 6050
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/who-we-serve-boarding.html",
+    "reference": "reference/phone/who-we-serve-boarding.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     15428
+    ],
+    "height": 7714
+   }
+  },
+  {
+   "route": "/who-we-serve/government",
+   "slug": "who-we-serve-government",
+   "title": "Government schools",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/who-we-serve-government.html",
+    "reference": "reference/desktop/who-we-serve-government.jpg",
+    "reference_px": [
+     1440,
+     5913
+    ],
+    "height": 5913
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/who-we-serve-government.html",
+    "reference": "reference/phone/who-we-serve-government.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     14490
+    ],
+    "height": 7245
+   }
+  },
+  {
+   "route": "/who-we-serve/private",
+   "slug": "who-we-serve-private",
+   "title": "Private schools",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/who-we-serve-private.html",
+    "reference": "reference/desktop/who-we-serve-private.jpg",
+    "reference_px": [
+     1440,
+     5983
+    ],
+    "height": 5983
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/who-we-serve-private.html",
+    "reference": "reference/phone/who-we-serve-private.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     14574
+    ],
+    "height": 7287
+   }
+  },
+  {
+   "route": "/who-we-serve/mission",
+   "slug": "who-we-serve-mission",
+   "title": "Mission schools",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/who-we-serve-mission.html",
+    "reference": "reference/desktop/who-we-serve-mission.jpg",
+    "reference_px": [
+     1440,
+     5233
+    ],
+    "height": 5233
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/who-we-serve-mission.html",
+    "reference": "reference/phone/who-we-serve-mission.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     12510
+    ],
+    "height": 6255
+   }
+  },
+  {
+   "route": "/who-we-serve/leadership",
+   "slug": "who-we-serve-leadership",
+   "title": "School leadership",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/who-we-serve-leadership.html",
+    "reference": "reference/desktop/who-we-serve-leadership.jpg",
+    "reference_px": [
+     1440,
+     5209
+    ],
+    "height": 5209
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/who-we-serve-leadership.html",
+    "reference": "reference/phone/who-we-serve-leadership.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     11136
+    ],
+    "height": 5568
+   }
+  },
+  {
+   "route": "/who-we-serve/bursary",
+   "slug": "who-we-serve-bursary",
+   "title": "The bursary",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/who-we-serve-bursary.html",
+    "reference": "reference/desktop/who-we-serve-bursary.jpg",
+    "reference_px": [
+     1440,
+     5209
+    ],
+    "height": 5209
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/who-we-serve-bursary.html",
+    "reference": "reference/phone/who-we-serve-bursary.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     11422
+    ],
+    "height": 5711
+   }
+  },
+  {
+   "route": "/who-we-serve/teachers",
+   "slug": "who-we-serve-teachers",
+   "title": "Teachers",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/who-we-serve-teachers.html",
+    "reference": "reference/desktop/who-we-serve-teachers.jpg",
+    "reference_px": [
+     1440,
+     5209
+    ],
+    "height": 5209
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/who-we-serve-teachers.html",
+    "reference": "reference/phone/who-we-serve-teachers.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     11730
+    ],
+    "height": 5865
+   }
+  },
+  {
+   "route": "/who-we-serve/boarding-staff",
+   "slug": "who-we-serve-boarding-staff",
+   "title": "Boarding staff",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/who-we-serve-boarding-staff.html",
+    "reference": "reference/desktop/who-we-serve-boarding-staff.jpg",
+    "reference_px": [
+     1440,
+     5209
+    ],
+    "height": 5209
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/who-we-serve-boarding-staff.html",
+    "reference": "reference/phone/who-we-serve-boarding-staff.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     11452
+    ],
+    "height": 5726
+   }
+  },
+  {
+   "route": "/who-we-serve/parents",
+   "slug": "who-we-serve-parents",
+   "title": "Parents and guardians",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/who-we-serve-parents.html",
+    "reference": "reference/desktop/who-we-serve-parents.jpg",
+    "reference_px": [
+     1440,
+     5176
+    ],
+    "height": 5176
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/who-we-serve-parents.html",
+    "reference": "reference/phone/who-we-serve-parents.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     11036
+    ],
+    "height": 5518
+   }
+  },
+  {
+   "route": "/who-we-serve/pupils",
+   "slug": "who-we-serve-pupils",
+   "title": "Pupils",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/who-we-serve-pupils.html",
+    "reference": "reference/desktop/who-we-serve-pupils.jpg",
+    "reference_px": [
+     1440,
+     5209
+    ],
+    "height": 5209
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/who-we-serve-pupils.html",
+    "reference": "reference/phone/who-we-serve-pupils.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     11204
+    ],
+    "height": 5602
+   }
+  },
+  {
+   "route": "/platform",
+   "slug": "platform",
+   "title": "Platform",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/platform.html",
+    "reference": "reference/desktop/platform.jpg",
+    "reference_px": [
+     1440,
+     6510
+    ],
+    "height": 6510
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/platform.html",
+    "reference": "reference/phone/platform.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     14730
+    ],
+    "height": 7365
+   }
+  },
+  {
+   "route": "/platform/integrations",
+   "slug": "platform-integrations",
+   "title": "Integrations",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/platform-integrations.html",
+    "reference": "reference/desktop/platform-integrations.jpg",
+    "reference_px": [
+     1440,
+     7067
+    ],
+    "height": 7067
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/platform-integrations.html",
+    "reference": "reference/phone/platform-integrations.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     14600
+    ],
+    "height": 7300
+   }
+  },
+  {
+   "route": "/moving-to-campus",
+   "slug": "moving-to-campus",
+   "title": "Moving to Campus",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/moving-to-campus.html",
+    "reference": "reference/desktop/moving-to-campus.jpg",
+    "reference_px": [
+     1440,
+     5078
+    ],
+    "height": 5078
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/moving-to-campus.html",
+    "reference": "reference/phone/moving-to-campus.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     9626
+    ],
+    "height": 4813
+   }
+  },
+  {
+   "route": "/pricing",
+   "slug": "pricing",
+   "title": "Pricing",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/pricing.html",
+    "reference": "reference/desktop/pricing.jpg",
+    "reference_px": [
+     1440,
+     5700
+    ],
+    "height": 5700
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/pricing.html",
+    "reference": "reference/phone/pricing.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     13480
+    ],
+    "height": 6740
+   }
+  },
+  {
+   "route": "/pricing/price-sheet.pdf",
+   "slug": "price-sheet",
+   "title": "Price sheet (A4 PDF)",
+   "desktop": {
+    "width": 794,
+    "html": "html/desktop/price-sheet.html",
+    "reference": "reference/desktop/price-sheet.jpg",
+    "reference_px": [
+     794,
+     1123
+    ],
+    "height": 1123
+   }
+  },
+  {
+   "route": "/demo",
+   "slug": "demo",
+   "title": "Book a demo",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/demo.html",
+    "reference": "reference/desktop/demo.jpg",
+    "reference_px": [
+     1440,
+     4099
+    ],
+    "height": 4099
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/demo.html",
+    "reference": "reference/phone/demo.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     11796
+    ],
+    "height": 5898
+   }
+  },
+  {
+   "route": "/demo/sent",
+   "slug": "demo-sent",
+   "title": "Request sent",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/demo-sent.html",
+    "reference": "reference/desktop/demo-sent.jpg",
+    "reference_px": [
+     1440,
+     2135
+    ],
+    "height": 2135
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/demo-sent.html",
+    "reference": "reference/phone/demo-sent.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     4512
+    ],
+    "height": 2256
+   }
+  },
+  {
+   "route": "app:/sign-in",
+   "slug": "sign-in",
+   "title": "Sign in (app)",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/sign-in.html",
+    "reference": "reference/desktop/sign-in.jpg",
+    "reference_px": [
+     1440,
+     900
+    ],
+    "height": 900
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/sign-in.html",
+    "reference": "reference/phone/sign-in.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     1688
+    ],
+    "height": 844
+   }
+  },
+  {
+   "route": "/contact",
+   "slug": "contact",
+   "title": "Contact",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/contact.html",
+    "reference": "reference/desktop/contact.jpg",
+    "reference_px": [
+     1440,
+     3405
+    ],
+    "height": 3405
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/contact.html",
+    "reference": "reference/phone/contact.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     8672
+    ],
+    "height": 4336
+   }
+  },
+  {
+   "route": "/support",
+   "slug": "support",
+   "title": "Support",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/support.html",
+    "reference": "reference/desktop/support.jpg",
+    "reference_px": [
+     1440,
+     3625
+    ],
+    "height": 3625
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/support.html",
+    "reference": "reference/phone/support.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     9108
+    ],
+    "height": 4554
+   }
+  },
+  {
+   "route": "/legal/privacy",
+   "slug": "legal-privacy",
+   "title": "Privacy",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/legal-privacy.html",
+    "reference": "reference/desktop/legal-privacy.jpg",
+    "reference_px": [
+     1440,
+     2691
+    ],
+    "height": 2691
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/legal-privacy.html",
+    "reference": "reference/phone/legal-privacy.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     5732
+    ],
+    "height": 2866
+   }
+  },
+  {
+   "route": "/legal/data-ownership",
+   "slug": "legal-data-ownership",
+   "title": "Data ownership",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/legal-data-ownership.html",
+    "reference": "reference/desktop/legal-data-ownership.jpg",
+    "reference_px": [
+     1440,
+     2381
+    ],
+    "height": 2381
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/legal-data-ownership.html",
+    "reference": "reference/phone/legal-data-ownership.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     4768
+    ],
+    "height": 2384
+   }
+  },
+  {
+   "route": "/legal/terms",
+   "slug": "legal-terms",
+   "title": "Terms",
+   "desktop": {
+    "width": 1440,
+    "html": "html/desktop/legal-terms.html",
+    "reference": "reference/desktop/legal-terms.jpg",
+    "reference_px": [
+     1440,
+     2572
+    ],
+    "height": 2572
+   },
+   "phone": {
+    "width": 390,
+    "html": "html/phone/legal-terms.html",
+    "reference": "reference/phone/legal-terms.jpg",
+    "reference_scale": 2,
+    "reference_px": [
+     780,
+     5134
+    ],
+    "height": 2567
+   }
+  }
+ ]
+}
