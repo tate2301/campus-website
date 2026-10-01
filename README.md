@@ -54,5 +54,7 @@ npm run pdf
 
 ### Forms
 
-`/demo` and `/contact` post to `src/app/api/demo` and `src/app/api/contact`, which are stubs: they check the request and
-redirect. Connect them to the team's inbox or CRM where the `TODO`s are.
+`/demo` and `/contact` post to `src/app/api/demo` and `src/app/api/contact`, which check the request
+(`src/lib/lead-route.ts`) and send it to the Corelith CRM's lead webhook (`src/lib/leads.ts`), as corelith.co.zw's
+forms do. Copy `.env.example` to `.env.local` and set `CORELITH_CRM_API_KEY`; until it is set, submissions are only
+written to the server log. NOTES.md has what arrives in the CRM and how spam is turned away.
