@@ -1,0 +1,11 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+test-results/
+playwright-report/
+design/tests/diff/
+.parity/
+.DS_Store
+__pycache__/
