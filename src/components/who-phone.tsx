@@ -23,7 +23,7 @@ function mDay(): ReactNode[] {
   return [
     <Pad key="day">
       <MHead eye="The school day" k="t-day" h="From the bus stop to home time, on one record." mb={20} />
-      <div style={sx(`display:flex;gap:8px;overflow:hidden;margin-right:-${MX}px`)}>
+      <div className="hscroll" style={sx(`display:flex;gap:8px;overflow:hidden;margin:0 -${MX}px;padding:0 ${MX}px;scroll-padding-left:${MX}px`)}>
         {steps.map(([t, h], i) => (
           <span key={t} style={sx(`flex:none;display:inline-flex;flex-direction:column;gap:2px;padding:10px 14px;border-radius:14px;${i === 1 ? `background:${INK};color:#fff` : `background:${PLATE};color:${INK2}`}`)}>
             <b style={sx(`font:500 12px ${MONO};color:${i === 1 ? "#bfd3fb" : BLUE}`)}>{t}</b><span style={sx(`font:600 14.5px ${SANS}`)}>{h}</span>

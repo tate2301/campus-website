@@ -210,7 +210,7 @@ export function PhoneFooter() {
     <>
       <div style={sx(`padding:48px 0 40px ${MX}px;border-top:1px solid ${LINE}`)}>
         <PhoneEyebrow t="Who we serve · K-12" k="who" />
-        <div style={sx("display:flex;gap:12px;margin-top:20px;overflow:hidden")}>
+        <div className="hscroll" style={sx(`display:flex;gap:12px;margin-top:20px;overflow:hidden;margin-left:-${MX}px;padding:0 ${MX}px;scroll-padding-left:${MX}px`)}>
           {(CP.SCHOOL_TYPES as [string, string, string][]).map(([n, k]) => (
             <A key={k} href={typeHref(k)} style="flex:none;width:150px">
               <div style={sx("position:relative;width:150px;height:110px")}>
