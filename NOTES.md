@@ -99,6 +99,8 @@ Added because the design has no words for them:
   needs fixing, "That's a few submissions in a row…", "We couldn't save your request just now. Please email
   hello@corelith.co.zw…", and, after a contact message is sent, "Sent. We read every message and reply by email." (the
   second sentence is the form's own copy).
+- Under "Forgot password?": "Your school's Campus administrator resets passwords. Ask them to reset yours." The site's
+  copy never says "workspace"; the people who run a school's Campus work in the Administration portal.
 - Accessible names: "Open menu", "Close menu", "Topic", "Package", "Search the guides", and the mark journey's
   description.
 
@@ -145,9 +147,10 @@ acceptance test, because the references show the drawn version.
   from the source, rather than Tailwind classes, so each can be checked against the function it ports. Tailwind provides
   the theme (tokens as CSS variables) without its preflight reset, which would change line heights the design depends on.
 - **Links the design doesn't specify:** "Corelith" in the footer goes to https://corelith.co.zw (confirmed: Corelith's
-  own site). "Open Help", "Forgot password?" and the guide search go to the app, at app.campus.corelith.co.zw as the
-  brief names it; corelith.co.zw has no Campus app or Help links to confirm those paths against, so **they still need
-  confirming**. "Book a visit" goes to the contact form.
+  own site). "Forgot password?" links nowhere: passwords are reset by the school's own administrator (confirmed), so it
+  opens a line under the row that says so. "Open Help" and the guide search go to the app, at
+  app.campus.corelith.co.zw as the brief names it; corelith.co.zw has no Campus app links to confirm those paths
+  against, so **they still need confirming**, as does the address the sign-in form posts to. "Book a visit" goes to the contact form.
 - **The drop-down menus** are built from the design-system board (`ds.mega_departments`, `ds.mega_who`): Solutions opens
   the nine departments and the Moving to Campus panel, Who we serve opens the school types and the roles. They open on
   hover or click and work from the keyboard (Enter or Space opens, Tab moves through, Escape closes and returns to the
