@@ -10,7 +10,8 @@
     "test:visual": "playwright test",
     "parity": "node scripts/parity.mjs",
     "art": "node scripts/extract-art.mjs",
-    "pdf": "node scripts/price-sheet-pdf.mjs"
+    "pdf": "node scripts/price-sheet-pdf.mjs",
+    "icons": "node scripts/icons.mjs"
   },
   "dependencies": {
     "next": "^16.3.8",

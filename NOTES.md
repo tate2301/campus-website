@@ -162,6 +162,12 @@ acceptance test, because the references show the drawn version.
 - **The phone FAQ is an accordion**, as drawn (first question open): `<details>`, with the chevron turned when open.
 - **Reduced motion** stops the mark journey at 90% of its loop, with the mark delivered to all four places (the loop's
   last frame is empty).
+- **Favicon and shared-link images** are not drawn in the design, so they are made from its parts. The icons
+  (`src/app/icon.svg`, `favicon.ico`, `apple-icon.png`) are the drawn 64 px Campus mark tile, written by
+  `npm run icons` (`scripts/icons.mjs`) from `design/components/campus-mark-64.html`. Each route's Open Graph / X
+  image (`opengraph-image.tsx`, rendered by `src/og/card.tsx` at build time) is the nav lockup, the page's name as a
+  blue eyebrow and its headline from `copy.json`; the lockup keeps "by Corelith" because a shared link stands on its
+  own. Satori needs TTF, so Atkinson Hyperlegible Next 400/500/600 is kept in `src/og/fonts` (OFL, as the site's).
 
 ## The forms
 
