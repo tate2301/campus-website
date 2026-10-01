@@ -66,6 +66,9 @@ for (const f of fs.readdirSync(path.join(DESIGN, "components")).filter((f) => f.
   if (k) seeded[k] = fs.readFileSync(path.join(DESIGN, "components", f), "utf8").trim();
 }
 
+// the price sheet is a PDF on the site; its source page is /print/price-sheet
+const sitePath = (route) => (route.endsWith(".pdf") ? "/print/price-sheet" : route.replace(/^app:/, ""));
+
 const browser = await chromium.launch();
 const ctx = await browser.newContext();
 await ctx.route(/^https?:\/\/(?!localhost)/, (r) => r.abort());  // the design pages need nothing from the network to be parsed
@@ -76,8 +79,8 @@ const missing = [];
 let added = 0;
 
 for (const r of spec.routes) {
-  if (r.route.endsWith(".pdf") || (only && !only.includes(r.slug))) continue;
-  await site.goto(BASE + r.route.replace(/^app:/, ""), { waitUntil: "domcontentloaded" });
+  if (only && !only.includes(r.slug)) continue;
+  await site.goto(BASE + sitePath(r.route), { waitUntil: "domcontentloaded" });
   for (const side of ["desktop", "phone"]) {
     if (!r[side]) continue;
     const found = await site.evaluate(COLLECT, side);

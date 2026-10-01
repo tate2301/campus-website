@@ -83,13 +83,14 @@ const browser = await chromium.launch();
 const pct = (x) => (Number.isNaN(x) ? "  width!" : (x * 100).toFixed(2).padStart(6) + "%");
 let failed = 0;
 for (const r of spec.routes) {
-  if (r.route.endsWith(".pdf") || (only && !only.includes(r.slug))) continue;
+  if (only && !only.includes(r.slug)) continue;
   for (const side of sides) {
     const s = r[side];
     if (!s) continue;
     const scale = s.reference_scale ?? 1;
     const route = r.route.replace(/^app:/, "");
-    const [mine, theirs] = [await shot(browser, BASE + route, s.width, scale), await shot(browser, servers[side].url + route, s.width, scale)];
+    const mineAt = route.endsWith(".pdf") ? "/print/price-sheet" : route;  // the PDF's source page
+    const [mine, theirs] = [await shot(browser, BASE + mineAt, s.width, scale), await shot(browser, servers[side].url + route, s.width, scale)];
     fs.writeFileSync(path.join(OUT, `${r.slug}-${side}.png`), mine);
     fs.writeFileSync(path.join(OUT, `${r.slug}-${side}.design.png`), theirs);
     const vsDesign = await compare(theirs, mine, `${r.slug}-${side}.diff.png`);
