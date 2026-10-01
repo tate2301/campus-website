@@ -2,7 +2,7 @@
  * The design system's building blocks, ported from design/source (common.py, landing.py, ui.py, ds.py, brandkit.py,
  * pages.py). Each component keeps the name of the function it ports and every value it draws with.
  */
-import Image from "next/image";
+import { Photo } from "./photo";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { Art } from "./art";
@@ -42,12 +42,12 @@ export const LogoOf = ({ r, s, c }: { r: string; s: number; c: string }) => <Art
 
 // ---- links ------------------------------------------------------------------------------------------------
 /** an element drawn as a span in the design that is a link on the site: same box, same style */
-export function A({ href, style, children, label }: { href?: string; style?: string; label?: string } & Kids) {
-  if (!href) return <span style={style ? sx(style) : undefined}>{children}</span>;
+export function A({ href, style, children, label, className }: { href?: string; style?: string; label?: string; className?: string } & Kids) {
+  if (!href) return <span className={className} style={style ? sx(style) : undefined}>{children}</span>;
   const s = style ? sx(style) : undefined;
-  if (href.startsWith("http") || href.startsWith("#") || href.endsWith(".pdf")) return <a href={href} style={s} aria-label={label}>{children}</a>;
+  if (href.startsWith("http") || href.startsWith("#") || href.endsWith(".pdf")) return <a href={href} className={className} style={s} aria-label={label}>{children}</a>;
   // no viewport prefetch: a page carries dozens of links, and loading every route on arrival would hold up the page
-  return <Link href={href} prefetch={false} style={s} aria-label={label}>{children}</Link>;
+  return <Link href={href} prefetch={false} className={className} style={s} aria-label={label}>{children}</Link>;
 }
 
 // ---- type -------------------------------------------------------------------------------------------------
@@ -114,7 +114,7 @@ export function Ph({ n, w, h, pos = "center", r = 24, extra = "", alt }: { n: st
   const width = typeof w === "number" ? `${w}px` : w;
   return (
     <div style={sx(`width:${width};height:${h}px;border-radius:${r}px;overflow:hidden;background:#dfe2e7;flex:none;${extra}`)}>
-      <Image src={`/assets/photos/${n}`} alt={alt ?? PHOTO_ALT[n] ?? ""} width={typeof w === "number" ? w : 350} height={h} loading="eager" decoding="sync"
+      <Photo src={`/assets/photos/${n}`} alt={alt ?? PHOTO_ALT[n] ?? ""} width={typeof w === "number" ? w : 350} height={h} loading="eager" decoding="sync"
         style={sx(`display:block;width:100%;height:100%;object-fit:cover;object-position:${pos}`)} />
     </div>
   );

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { Photo } from "@/components/photo";
 import { SitePage } from "@/components/page";
 import { Lockup } from "@/components/chrome";
 import { CheckInput, FieldInput } from "@/components/forms";
@@ -43,7 +43,7 @@ function Desktop() {
       </div>
       <div style={sx("position:relative;flex:1;height:900px;padding:24px 24px 24px 0;box-sizing:border-box")}>
         <div style={sx("position:relative;width:100%;height:100%;border-radius:28px;overflow:hidden")}>
-          <Image src="/assets/photos/boys-reading-2.jpg" alt={PHOTO_ALT["boys-reading-2.jpg"]} width={776} height={852} loading="eager" decoding="sync"
+          <Photo src="/assets/photos/boys-reading-2.jpg" alt={PHOTO_ALT["boys-reading-2.jpg"]} width={776} height={852} loading="eager" decoding="sync"
             style={sx("width:100%;height:100%;object-fit:cover;object-position:47% 42%")} />
           <div style={sx("position:absolute;left:24px;bottom:24px;display:flex;gap:8px")}>
             {PORTAL_NAMES.map((n) => (
@@ -64,7 +64,7 @@ function Phone() {
   return (
     <>
       <div style={sx("position:relative;height:250px")}>
-        <Image src="/assets/photos/boys-reading-2.jpg" alt={PHOTO_ALT["boys-reading-2.jpg"]} width={390} height={250} loading="eager" decoding="sync"
+        <Photo src="/assets/photos/boys-reading-2.jpg" alt={PHOTO_ALT["boys-reading-2.jpg"]} width={390} height={250} loading="eager" decoding="sync"
           style={sx("width:100%;height:100%;object-fit:cover;object-position:47% 42%")} />
         <div style={sx(`position:absolute;left:${MX}px;right:${MX}px;bottom:14px;display:flex;flex-wrap:wrap;gap:6px`)}>
           {PORTAL_NAMES.map((n) => (
