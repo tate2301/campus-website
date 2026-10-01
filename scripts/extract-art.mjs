@@ -57,6 +57,8 @@ const seedKey = (f) => {
   if (n === "campus-mark-64") return "mark:64:17";
   if (n.startsWith("icon-")) return `nav:${n.slice(5)}:48`;
   if (n.startsWith("portal-icon-")) return `portal:${n[12].toUpperCase()}${n.slice(13)}:48`;
+  // the call-to-action scenes in design/components are the CTA block's (600 x 430, U 42, centre 300,255)
+  if (n.startsWith("cta-scene-")) return `cta:${n.slice(10)}:600x430:42,300,255`;
   if (n.startsWith("logo-")) return LOGO_NAME[n.slice(5)] ? `logo:${LOGO_NAME[n.slice(5)]}:48` : null;
   return null;
 };
@@ -78,6 +80,16 @@ const conflicts = [];
 const missing = [];
 let added = 0;
 
+// Seeds go first: a named fragment is what that drawing is, wherever a page puts it. (Pricing closes with the Price
+// call to action, per rules.md, where the design's page draws Visit; matched by position, the page would say Visit.)
+// They go through the browser too, so they are serialised exactly as the extracted pieces are.
+for (const [k, html] of Object.entries(seeded)) {
+  await design.setContent(`<body>${html}</body>`);
+  const piece = await design.evaluate(() => document.body.firstElementChild.outerHTML);
+  if (registry[k] === undefined) { registry[k] = piece; added++; }
+  else if (registry[k] !== piece) conflicts.push(`design/components seed ${k} differs from the registry`);
+}
+
 for (const r of spec.routes) {
   if (only && !only.includes(r.slug)) continue;
   await site.goto(BASE + sitePath(r.route), { waitUntil: "domcontentloaded" });
@@ -98,13 +110,6 @@ for (const r of spec.routes) {
   }
 }
 
-// seeds go through the browser too, so they are serialised exactly as the extracted pieces are
-for (const [k, html] of Object.entries(seeded)) {
-  await design.setContent(`<body>${html}</body>`);
-  const piece = await design.evaluate(() => document.body.firstElementChild.outerHTML);
-  if (registry[k] === undefined) { registry[k] = piece; added++; }
-  else if (registry[k] !== piece) conflicts.push(`design/components seed ${k} differs from the piece on the pages`);
-}
 await browser.close();
 
 const sorted = Object.fromEntries(Object.keys(registry).sort().map((k) => [k, registry[k]]));

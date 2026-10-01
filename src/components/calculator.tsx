@@ -24,14 +24,14 @@ function Pill({ t, c, bg }: { t: string; c: string; bg: string }) {
   );
 }
 
-export function Calculator({ w = 520 }: { w?: number | string }) {
+export function Calculator({ w = 520, id: boxId = "calculator" }: { w?: number | string; id?: string }) {
   const id = useId();
   const [text, setText] = useState("1,140");
   const [pkg, setPkg] = useState(0);
   const pupils = Math.max(0, Math.floor(Number(text.replace(/[^\d]/g, "")) || 0));
   const [, rate] = RATES[pkg];
   return (
-    <div id="calculator" style={sx(`width:${typeof w === "number" ? `${w}px` : w};box-sizing:border-box;background:#fff;border-radius:24px;box-shadow:0 0 0 1px ${LINE},${SH_CARD};padding:32px`)}>
+    <div id={boxId} style={sx(`width:${typeof w === "number" ? `${w}px` : w};box-sizing:border-box;background:#fff;border-radius:24px;box-shadow:0 0 0 1px ${LINE},${SH_CARD};padding:32px`)}>
       <div style={sx(`font:600 18px ${SANS}`)}>Work out your school</div>
       <div style={sx("display:flex;gap:16px;margin-top:22px;align-items:flex-end")}>
         <div style={sx("width:200px")}>

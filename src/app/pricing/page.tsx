@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { Photo } from "@/components/photo";
 import { SitePage, Gap } from "@/components/page";
 import { NavBar, PhoneNav, SiteFooter } from "@/components/chrome";
 import { CtaSection, DemoBtns, FaqList, PageHero, Row, SecHead, Steps, Wrap } from "@/components/sections";
@@ -27,7 +27,7 @@ function Desktop() {
   const cards = (
     <div style={sx("display:flex;gap:24px;align-items:stretch;width:1200px")}>
       <div style={sx("flex:none;width:340px;border-radius:24px;overflow:hidden;position:relative;background:#dfe2e7")}>
-        <Image src="/assets/photos/girl-beret.jpg" alt={PHOTO_ALT["girl-beret.jpg"]} width={340} height={600} loading="eager" decoding="sync"
+        <Photo src="/assets/photos/girl-beret.jpg" alt={PHOTO_ALT["girl-beret.jpg"]} width={340} height={600} loading="eager" decoding="sync"
           style={sx("position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%")} />
       </div>
       <PricingCard p={CP.PRICING.main} primary w={418} /><PricingCard p={CP.PRICING.lms} primary={false} w={418} />
@@ -38,7 +38,7 @@ function Desktop() {
       <NavBar open="Pricing" />
       <PageHero eye={Pr.eyebrow} k="pricing" h={Pr.h} b={Pr.b} buttons={<DemoBtns price />} pic={cards} />
       <Gap h={GAP} />
-      <Wrap><Row eye={Pr.calc_h} k="calculator" h={CALC_HEAD} b={Pr.calc_b} pic={<Calculator w={560} />} /></Wrap>
+      <Wrap><Row eye={Pr.calc_h} k="calculator" h={CALC_HEAD} b={Pr.calc_b} pic={<Calculator w={560} id="calculator" />} /></Wrap>
       <Gap h={GAP} />
       <Wrap>
         <SecHead eye={Pr.incl_h} k="included" h={INCL_HEAD} />
@@ -64,7 +64,8 @@ function Desktop() {
       </section>
       <Gap h={GAP} />
       <FaqList eye={Pr.faq_h} k="questions" h={FAQ_HEAD} qa={QA} />
-      <CtaSection kind="visit" />
+      {/* rules.md: the Price call to action closes Pricing (the drawn page closes with Visit; NOTES.md) */}
+      <CtaSection kind="price" hrefs={{ "Work out your school": "#calculator" }} />
       <SiteFooter />
     </>
   );
@@ -80,7 +81,7 @@ function Phone() {
         pic={<div style={sx("display:flex;flex-direction:column;gap:14px")}><PricingCard p={CP.PRICING.main} primary w="100%" /><PricingCard p={CP.PRICING.lms} primary={false} w="100%" /></div>}
         buttons={<><BtnFull label="Book a demo" /><BtnFull label="Download the price sheet (PDF)" icon="download-2" kind="secondary" /></>} />
       <MGap />
-      <MRow eye={Pr.calc_h} k="calculator" h={CALC_HEAD} b={Pr.calc_b} pic={<Calculator w="100%" />} />
+      <MRow eye={Pr.calc_h} k="calculator" h={CALC_HEAD} b={Pr.calc_b} pic={<Calculator w="100%" id="calculator-phone" />} />
       <MGap />
       <Pad>
         <MHead eye={Pr.incl_h} k="included" h={INCL_HEAD} />
@@ -102,7 +103,7 @@ function Phone() {
       </section>
       <MGap />
       <MFaq eye={Pr.faq_h} k="questions" h={FAQ_HEAD} qa={QA} />
-      <MEnd />
+      <MEnd kind="price" hrefs={{ "Work out your school": "#calculator-phone" }} />
     </>
   );
 }

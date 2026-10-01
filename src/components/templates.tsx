@@ -155,9 +155,8 @@ function TypePhone({ k }: { k: string }) {
     <>
       <PhoneNav />
       <MHero eye={T.name} k={k} h={T.h} b={T.b} pic={<PhotoCard photo={photo} pos={pos} card={<MTCard name={a} />} />} />
-      {/* mobile.m_day and its siblings put a gap before every section after the first, and type_page puts another
-          before each, so those sections are 192px apart on the phone, as drawn (NOTES.md) */}
-      {M_SECTIONS[k]().map((s, i) => <Section key={i}><MGap />{i ? <MGap /> : null}{s}</Section>)}
+      {/* 96px between sections, as everywhere on the phone (the drawn pages have 192 here; NOTES.md) */}
+      {M_SECTIONS[k]().map((s, i) => <Section key={i}><MGap />{s}</Section>)}
       <MGap />
       <Pad><MHead eye="Departments" k="solutions" h={SW.TYPE_DEPTS_H} /><MTiles slugs={T.depts} /></Pad>
       <MEnd />
