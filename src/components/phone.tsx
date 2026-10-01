@@ -138,19 +138,24 @@ export function MFaq({ eye, k, h, qa }: { eye: ReactNode; k: string; h: ReactNod
 }
 
 /** mobile.cta: the call to action with its drawing */
-export function MCta({ kind = "visit" }: { kind?: "visit" | "price" | "training" }) {
+export function MCta({ kind = "visit", hrefs = {} }: { kind?: "visit" | "price" | "training"; hrefs?: Record<string, string> }) {
   const [h, b, btns] = CTAS[kind];
   const second = btns[1];
+  // The price scene is drawn only at the desktop block's size (design/components/cta-scene-price.html); on the phone it
+  // is that drawing fitted to the column, 233.6px tall where the other two are 245.
+  const scene = kind === "price"
+    ? <Scaled w={326} h={pyRound(430 * 326 / 600)} k={326 / 600}><CtaScene k="price" w={600} h={430} U={42} cx={300} cy={255} /></Scaled>
+    : <Scaled w={326} h={245} k={326 / 560}><CtaScene k={kind} w={560} h={420} U={40} cx={280} cy={250} /></Scaled>;
   return (
     <Pad>
       <div style={sx(`border-radius:24px;background:${PLATE};padding:12px 12px 26px`)}>
         <div style={sx(`border-radius:18px;overflow:hidden;${DOTS};box-shadow:inset 0 0 0 1px #e3e6eb`)}>
-          <Scaled w={326} h={245} k={326 / 560}><CtaScene k={kind} w={560} h={420} U={40} cx={280} cy={250} /></Scaled>
+          {scene}
         </div>
         <div style={sx("padding:20px 10px 0;display:flex;flex-direction:column;gap:14px")}>
           <H2 t={h} size={28} /><P t={b} size={16} />
-          <BtnFull label={btns[0][0]} icon={btns[0][1]} />
-          {second ? <BtnFull label={second[0]} icon={second[1]} kind="secondary" /> : null}
+          <BtnFull label={btns[0][0]} icon={btns[0][1]} to={hrefs[btns[0][0]]} />
+          {second ? <BtnFull label={second[0]} icon={second[1]} kind="secondary" to={hrefs[second[0]]} /> : null}
         </div>
       </div>
     </Pad>
@@ -158,7 +163,7 @@ export function MCta({ kind = "visit" }: { kind?: "visit" | "price" | "training"
 }
 
 /** mobile.end: the call to action and the footer */
-export const MEnd = ({ kind = "visit" }: { kind?: "visit" | "price" | "training" }) => <><MGap /><MCta kind={kind} /><MGap /><PhoneFooter /></>;
+export const MEnd = ({ kind = "visit", hrefs }: { kind?: "visit" | "price" | "training"; hrefs?: Record<string, string> }) => <><MGap /><MCta kind={kind} hrefs={hrefs} /><MGap /><PhoneFooter /></>;
 
 /** mobile.role_tile */
 export function MRoleTile({ r }: { r: [string, string, string, string] }) {

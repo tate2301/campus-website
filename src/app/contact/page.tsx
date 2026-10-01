@@ -4,7 +4,7 @@ import { NavBar, PhoneNav, SiteFooter } from "@/components/chrome";
 import { CtaSection, DemoBtns, LinkCard, PageHero, Wrap } from "@/components/sections";
 import { ThreadCard } from "@/components/site-cards";
 import { FieldInput, PillInput } from "@/components/forms";
-import { SentNote } from "@/components/sent-note";
+import { FormKit } from "@/components/form-kit";
 import { H2, MEnd, MGap, MHero, P, PEyebrow, Pad, PhotoCard } from "@/components/phone";
 import { Cbtn, Eyebrow, Head, Para, PhotoStory, Tagged, sx } from "@/components/ds";
 import { SW } from "@/content/copy";
@@ -13,7 +13,6 @@ import { CW, GAP, INK2, MUTED, MX, PLATE, PX, SANS } from "@/lib/design";
 export const metadata: Metadata = { title: "Contact", description: SW.CONTACT.b };
 
 type Route = [string, string, string, string];
-const note = sx(`font:400 15px ${SANS};color:${MUTED};margin-left:16px;align-self:center`);
 
 /** webpages.contact_secs */
 function Desktop() {
@@ -32,12 +31,13 @@ function Desktop() {
               {(C.topics as string[]).map((t, i) => <PillInput key={t} t={t} name="topic" checked={i === 0} />)}
             </div>
             <div style={sx("display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:4px")}>
-              <FieldInput id="c-d-name" name="name" label="Your name" ph="Chipo Mutasa" w={250} autoComplete="name" />
+              <FieldInput id="c-d-name" name="name" label="Your name" ph="Chipo Mutasa" w={250} autoComplete="name" required />
               <FieldInput id="c-d-email" name="email" type="email" label="Email" ph="head@mukuvisi.ac.zw" w={250} autoComplete="email" required />
             </div>
             <FieldInput id="c-d-org" name="organisation" label="Organisation" ph="Mukuvisi High School" w={520} autoComplete="organization" />
             <FieldInput id="c-d-msg" name="message" label="Message" ph="What would you like to ask?" kind="area" w={520} required />
-            <div style={sx("display:flex;margin-top:6px")}><Cbtn label="Send message" icon="send-plane" kind="primary" size="lg" type="submit" /><SentNote style={note} /></div>
+            <div style={sx("display:flex;margin-top:6px")}><Cbtn label="Send message" icon="send-plane" kind="primary" size="lg" type="submit" /></div>
+            <FormKit font={SANS} />
           </form>
           <PhotoStory n="office-documents.jpg" pos="center 30%" cards={[[0, 250, <Tagged key="t" tag="Campus team"><ThreadCard w={340} /></Tagged>]]} w={620} h={640} />
         </div>
@@ -63,11 +63,12 @@ function Phone() {
         <div role="radiogroup" aria-label="Topic" style={sx("display:flex;flex-wrap:wrap;gap:8px")}>
           {(C.topics as string[]).map((t, i) => <PillInput key={t} t={t} name="topic" checked={i === 0} />)}
         </div>
-        <FieldInput id="c-p-name" name="name" label="Your name" ph="Chipo Mutasa" w="100%" autoComplete="name" />
+        <FieldInput id="c-p-name" name="name" label="Your name" ph="Chipo Mutasa" w="100%" autoComplete="name" required />
         <FieldInput id="c-p-email" name="email" type="email" label="Email" ph="head@mukuvisi.ac.zw" w="100%" autoComplete="email" required />
         <FieldInput id="c-p-org" name="organisation" label="Organisation" ph="Mukuvisi High School" w="100%" autoComplete="organization" />
         <FieldInput id="c-p-msg" name="message" label="Message" ph="What would you like to ask?" kind="area" w="100%" required />
-        <div style={sx("display:flex")}><Cbtn label="Send message" icon="send-plane" kind="primary" size="lg" type="submit" full /><SentNote style={note} /></div>
+        <div style={sx("display:flex")}><Cbtn label="Send message" icon="send-plane" kind="primary" size="lg" type="submit" full /></div>
+        <FormKit font={SANS} />
         <div style={sx("margin-top:24px")}><PhotoCard photo="office-documents.jpg" pos="center 30%" card={<Tagged tag="Campus team"><ThreadCard w={326} /></Tagged>} /></div>
       </form>
       <MEnd />

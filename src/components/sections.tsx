@@ -322,14 +322,14 @@ export function PriceBand() {
 }
 
 /** ds.cta_block: a call to action, drawn as what happens next */
-export function CtaBlock({ kind }: { kind: "visit" | "price" | "training" }) {
+export function CtaBlock({ kind, hrefs = {} }: { kind: "visit" | "price" | "training"; hrefs?: Record<string, string> }) {
   const [h, b, btns] = CTAS[kind];
   return (
     <div style={sx(`width:100%;box-sizing:border-box;display:flex;align-items:center;gap:48px;border-radius:32px;background:${PLATE};padding:24px 24px 24px 64px`)}>
       <div style={sx("flex:1;display:flex;flex-direction:column;gap:20px")}>
         <H2 a={h} size={44} /><Para t={b} size={18} c={INK2} mw={520} />
         <div style={sx("display:flex;gap:12px;flex-wrap:wrap;margin-top:6px")}>
-          {btns.map(([t, i, k]) => <Cbtn key={t} label={t} icon={i} kind={k as "primary"} size="lg" href={href(t)} />)}
+          {btns.map(([t, i, k]) => <Cbtn key={t} label={t} icon={i} kind={k as "primary"} size="lg" href={hrefs[t] ?? href(t)} />)}
         </div>
       </div>
       <div style={sx(`width:600px;height:430px;border-radius:24px;overflow:hidden;${DOTS};box-shadow:inset 0 0 0 1px #e3e6eb;flex:none`)}>
@@ -340,8 +340,8 @@ export function CtaBlock({ kind }: { kind: "visit" | "price" | "training" }) {
 }
 
 /** the call to action, 160 above and below, in the 80px gutter (webpages.footer_secs) */
-export const CtaSection = ({ kind = "visit" }: { kind?: "visit" | "price" | "training" }) =>
-  <div style={sx(`padding:${GAP}px ${PX80}`)}><CtaBlock kind={kind} /></div>;
+export const CtaSection = ({ kind = "visit", hrefs }: { kind?: "visit" | "price" | "training"; hrefs?: Record<string, string> }) =>
+  <div style={sx(`padding:${GAP}px ${PX80}`)}><CtaBlock kind={kind} hrefs={hrefs} /></div>;
 
 /** webpages.split_band: a grey band, text and a photograph */
 export function SplitBand({ eye, k, h, b, photo, pos }: { eye: ReactNode; k: string; h: ReactNode; b: ReactNode; photo: string; pos: string }) {

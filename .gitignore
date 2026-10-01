@@ -9,3 +9,5 @@ design/tests/diff/
 .parity/
 .DS_Store
 __pycache__/
+.env
+.env.local

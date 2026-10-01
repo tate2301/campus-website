@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import { SitePage, Gap } from "@/components/page";
-import { NavBar, PhoneNav, PhoneFooter, SiteFooter } from "@/components/chrome";
-import { FaqList, Rows, SecHead, Wrap } from "@/components/sections";
+import { NavBar, PhoneNav, SiteFooter } from "@/components/chrome";
+import { CtaSection, FaqList, Rows, SecHead, Wrap } from "@/components/sections";
 import { TCard } from "@/components/pictures";
 import { CheckInput, FieldInput } from "@/components/forms";
-import { H1, MFaq, MGap, MHead, MRow, P, PEyebrow, Pad, PhotoCard } from "@/components/phone";
+import { FormKit } from "@/components/form-kit";
+import { H1, MEnd, MFaq, MGap, MHead, MRow, P, PEyebrow, Pad, PhotoCard } from "@/components/phone";
 import { Cbtn, Eyebrow, Para, PhotoStory, sx } from "@/components/ds";
 import { SW } from "@/content/copy";
 import { BLUE, GAP, INK2, LINE, MONO, MUTED, MX, PLATE, PX, SANS, SH_CARD } from "@/lib/design";
@@ -19,7 +20,7 @@ const MIN_H: Record<string, number> = { head_card: 340, payments_card: 340, regi
 function DemoForm({ id }: { id: string }) {
   const f = (n: string) => `${id}-${n}`;
   return (
-    <form action="/api/demo" method="post" style={sx(`width:560px;box-sizing:border-box;padding:36px;border-radius:24px;background:#fff;box-shadow:0 0 0 1px ${LINE},${SH_CARD}`)}>
+    <form id={id} action="/api/demo" method="post" style={sx(`width:560px;box-sizing:border-box;padding:36px;border-radius:24px;background:#fff;box-shadow:0 0 0 1px ${LINE},${SH_CARD}`)}>
       <div style={sx(`font:600 24px ${SANS};letter-spacing:-0.015em`)}>Book a demo</div>
       <div style={sx(`font:400 15px ${SANS};color:${MUTED};margin-top:6px`)}>We call you to arrange a visit.</div>
       <div style={sx("display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:26px")}>
@@ -46,6 +47,7 @@ function DemoForm({ id }: { id: string }) {
         <span style={sx(`font:400 13px/1.5 ${SANS};color:${MUTED};max-width:250px`)}>We use these details only to arrange the demo.</span>
         <Cbtn label="Book a demo" icon="calendar" kind="primary" size="lg" type="submit" />
       </div>
+      <FormKit font={SANS} />
     </form>
   );
 }
@@ -54,7 +56,7 @@ function DemoForm({ id }: { id: string }) {
 function PhoneDemoForm({ id }: { id: string }) {
   const f = (n: string) => `${id}-${n}`;
   return (
-    <form action="/api/demo" method="post" style={sx(`border-radius:22px;background:#fff;box-shadow:0 0 0 1px ${LINE},${SH_CARD};padding:24px 20px;display:flex;flex-direction:column;gap:16px`)}>
+    <form id={id} action="/api/demo" method="post" style={sx(`border-radius:22px;background:#fff;box-shadow:0 0 0 1px ${LINE},${SH_CARD};padding:24px 20px;display:flex;flex-direction:column;gap:16px`)}>
       <div style={sx(`font:600 22px ${SANS}`)}>Book a demo</div>
       <FieldInput id={f("name")} name="name" label="Your name" ph="Chipo Mutasa" w={310} required autoComplete="name" />
       <FieldInput id={f("role")} name="role" label="Your role" ph="Head" kind="select" options={ROLES} w={310} required />
@@ -68,6 +70,7 @@ function PhoneDemoForm({ id }: { id: string }) {
       </div>
       <div style={sx("display:flex")}><Cbtn label="Book a demo" icon="calendar" kind="primary" size="lg" type="submit" full /></div>
       <div style={sx(`font:400 13px/1.5 ${SANS};color:${MUTED}`)}>We use these details only to arrange the demo.</div>
+      <FormKit font={SANS} />
     </form>
   );
 }
@@ -122,7 +125,8 @@ function Desktop() {
       <Wrap><Rows items={[{ eye: e, k, h, b, pic: <PhotoStory n="woman-files.jpg" pos="center 30%" cards={[[0, 70, <TCard key="v" name="visitors_card" />]]} w={620} h={460} /> }]} /></Wrap>
       <Gap h={GAP} />
       <FaqList eye="Questions" k="questions" h={D.faq_h} qa={D.faq} />
-      <Gap h={GAP} />
+      {/* rules.md: Training closes the demo page (the drawn page has no call to action; NOTES.md) */}
+      <CtaSection kind="training" hrefs={{ "Book a demo": "#demo-d" }} />
       <SiteFooter />
     </>
   );
@@ -168,8 +172,7 @@ function Phone() {
       <MRow eye={e} k={k} h={h} b={b} pic={<PhotoCard photo="woman-files.jpg" pos="center 30%" card={<TCard name="visitors_card" w={326} />} />} />
       <MGap />
       <MFaq eye="Questions" k="questions" h={D.faq_h} qa={D.faq} />
-      <MGap />
-      <PhoneFooter />
+      <MEnd kind="training" hrefs={{ "Book a demo": "#demo-p" }} />
     </>
   );
 }
