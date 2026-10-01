@@ -77,10 +77,10 @@ function Phone() {
     <>
       <PhoneNav />
       <MHero eye={Pr.eyebrow} k="pricing" h={Pr.h} b={Pr.b}
-        pic={<div style={sx("display:flex;flex-direction:column;gap:14px")}><PricingCard p={CP.PRICING.main} primary w={CW} /><PricingCard p={CP.PRICING.lms} primary={false} w={CW} /></div>}
+        pic={<div style={sx("display:flex;flex-direction:column;gap:14px")}><PricingCard p={CP.PRICING.main} primary w="100%" /><PricingCard p={CP.PRICING.lms} primary={false} w="100%" /></div>}
         buttons={<><BtnFull label="Book a demo" /><BtnFull label="Download the price sheet (PDF)" icon="download-2" kind="secondary" /></>} />
       <MGap />
-      <MRow eye={Pr.calc_h} k="calculator" h={CALC_HEAD} b={Pr.calc_b} pic={<Calculator w={CW} />} />
+      <MRow eye={Pr.calc_h} k="calculator" h={CALC_HEAD} b={Pr.calc_b} pic={<Calculator w="100%" />} />
       <MGap />
       <Pad>
         <MHead eye={Pr.incl_h} k="included" h={INCL_HEAD} />

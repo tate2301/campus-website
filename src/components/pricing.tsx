@@ -4,9 +4,9 @@ import { BLUE, INK2, LINE, MUTED, SANS } from "@/lib/design";
 
 type Plan = { name: string; price: string; per: string; items: string[] };
 
-export function PricingCard({ p, primary = true, w = 413 }: { p: Plan; primary?: boolean; w?: number }) {
+export function PricingCard({ p, primary = true, w = 413 }: { p: Plan; primary?: boolean; w?: number | string }) {
   return (
-    <div style={sx(`width:${w}px;box-sizing:border-box;background:#fff;border-radius:24px;box-shadow:0 0 0 ${primary ? 2 : 1}px ${primary ? BLUE : LINE};padding:32px;display:flex;flex-direction:column;gap:18px`)}>
+    <div style={sx(`width:${typeof w === "number" ? `${w}px` : w};box-sizing:border-box;background:#fff;border-radius:24px;box-shadow:0 0 0 ${primary ? 2 : 1}px ${primary ? BLUE : LINE};padding:32px;display:flex;flex-direction:column;gap:18px`)}>
       <div style={sx("display:flex;justify-content:space-between;align-items:center")}>
         <span style={sx(`font:600 18px ${SANS}`)}>{p.name}</span>{primary ? <Status t="Current offer" kind="info" /> : null}
       </div>

@@ -50,7 +50,7 @@ function Phone() {
           {(CP.SCHOOL_TYPES as Type[]).map(([n, k, d]) => (
             <A key={k} href={typeHref(k)} style="display:block">
               <div style={sx("position:relative")}>
-                <Ph n={TYPE_PHOTO[k][0]} w={CW} h={200} pos={TYPE_PHOTO[k][1]} r={20} />
+                <Ph n={TYPE_PHOTO[k][0]} w="100%" h={200} pos={TYPE_PHOTO[k][1]} r={20} />
                 <div style={sx("position:absolute;left:12px;bottom:12px;border-radius:12px;box-shadow:0 8px 18px -10px rgba(11,12,20,.5)")}><NavIcon k={k} s={40} /></div>
               </div>
               <div style={sx(`font:600 19px ${SANS};margin-top:14px`)}>{n}</div>

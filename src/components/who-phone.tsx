@@ -41,7 +41,7 @@ function mDay(): ReactNode[] {
       <div style={sx("display:flex;flex-direction:column;gap:14px")}>
         {levels.map(([photo, pos, t, d, pts]) => (
           <div key={t} style={sx(`border-radius:22px;background:${PLATE};overflow:hidden`)}>
-            <Ph n={photo} w={CW} h={200} pos={pos} r={0} />
+            <Ph n={photo} w="100%" h={200} pos={pos} r={0} />
             <div style={sx("padding:20px 22px 24px")}>
               <div style={sx(`font:600 22px/1.15 ${SANS};letter-spacing:-0.02em`)}>{t}</div>
               <div style={sx(`font:400 15px/1.55 ${SANS};color:${INK2};margin-top:8px`)}>{d}</div>
@@ -148,7 +148,7 @@ function mMission(): ReactNode[] {
       pic={<PlateCard card={<Tagged tag="Teacher portal"><MixedRegisterCard w={310} /></Tagged>} />} />,
     <MRow key="auth" eye="Responsible authority" k="insights" h="The report your church asks for, without retyping."
       b="Enrolment, results, finance and staffing for the responsible authority, built from the records the school keeps every day."
-      pic={<div style={sx("position:relative")}><Ph n="girls-desks.jpg" w={CW} h={220} pos="center 35%" r={20} /><div style={sx("margin:-80px 10px 0;position:relative")}><AuthorityDoc w={330} /></div></div>} />,
+      pic={<div style={sx("position:relative")}><Ph n="girls-desks.jpg" w="100%" h={220} pos="center 35%" r={20} /><div style={sx("margin:-80px 10px 0;position:relative")}><AuthorityDoc w={330} /></div></div>} />,
   ];
 }
 

@@ -63,10 +63,10 @@ function Phone() {
         <div role="radiogroup" aria-label="Topic" style={sx("display:flex;flex-wrap:wrap;gap:8px")}>
           {(C.topics as string[]).map((t, i) => <PillInput key={t} t={t} name="topic" checked={i === 0} />)}
         </div>
-        <FieldInput id="c-p-name" name="name" label="Your name" ph="Chipo Mutasa" w={CW} autoComplete="name" />
-        <FieldInput id="c-p-email" name="email" type="email" label="Email" ph="head@mukuvisi.ac.zw" w={CW} autoComplete="email" required />
-        <FieldInput id="c-p-org" name="organisation" label="Organisation" ph="Mukuvisi High School" w={CW} autoComplete="organization" />
-        <FieldInput id="c-p-msg" name="message" label="Message" ph="What would you like to ask?" kind="area" w={CW} required />
+        <FieldInput id="c-p-name" name="name" label="Your name" ph="Chipo Mutasa" w="100%" autoComplete="name" />
+        <FieldInput id="c-p-email" name="email" type="email" label="Email" ph="head@mukuvisi.ac.zw" w="100%" autoComplete="email" required />
+        <FieldInput id="c-p-org" name="organisation" label="Organisation" ph="Mukuvisi High School" w="100%" autoComplete="organization" />
+        <FieldInput id="c-p-msg" name="message" label="Message" ph="What would you like to ask?" kind="area" w="100%" required />
         <div style={sx("display:flex")}><Cbtn label="Send message" icon="send-plane" kind="primary" size="lg" type="submit" full /><SentNote style={note} /></div>
         <div style={sx("margin-top:24px")}><PhotoCard photo="office-documents.jpg" pos="center 30%" card={<Tagged tag="Campus team"><ThreadCard w={326} /></Tagged>} /></div>
       </form>

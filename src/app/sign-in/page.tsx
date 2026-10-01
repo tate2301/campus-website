@@ -77,8 +77,8 @@ function Phone() {
       <form action={APP} method="post" style={sx(`padding:28px ${MX}px`)}>
         <Lockup h={22} by={false} href="/" />
         <h1 style={sx(`margin:22px 0 0;font:600 30px/1.1 ${SANS};letter-spacing:-0.03em`)}>{S.h}</h1>
-        <div style={sx("margin-top:24px")}><FieldInput id="si-p-user" name="user" label="Email or phone number" ph="rudo.moyo@gmail.com" w={CW} autoComplete="username" required /></div>
-        <div style={sx("margin-top:16px")}><FieldInput id="si-p-pw" name="password" type="password" label="Password" ph="••••••••••" w={CW} autoComplete="current-password" required tail={show} /></div>
+        <div style={sx("margin-top:24px")}><FieldInput id="si-p-user" name="user" label="Email or phone number" ph="rudo.moyo@gmail.com" w="100%" autoComplete="username" required /></div>
+        <div style={sx("margin-top:16px")}><FieldInput id="si-p-pw" name="password" type="password" label="Password" ph="••••••••••" w="100%" autoComplete="current-password" required tail={show} /></div>
         <div style={sx("display:flex;justify-content:space-between;align-items:center;margin-top:14px")}>
           <CheckInput label="Keep me signed in" name="remember" value="1" checked />
           <A href={`${APP}/forgot`} style={`font:500 14px ${SANS};color:${BLUE}`}>Forgot password?</A>

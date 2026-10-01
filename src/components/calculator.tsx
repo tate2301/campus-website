@@ -24,19 +24,19 @@ function Pill({ t, c, bg }: { t: string; c: string; bg: string }) {
   );
 }
 
-export function Calculator({ w = 520 }: { w?: number }) {
+export function Calculator({ w = 520 }: { w?: number | string }) {
   const id = useId();
   const [text, setText] = useState("1,140");
   const [pkg, setPkg] = useState(0);
   const pupils = Math.max(0, Math.floor(Number(text.replace(/[^\d]/g, "")) || 0));
   const [, rate] = RATES[pkg];
   return (
-    <div id="calculator" style={sx(`width:${w}px;box-sizing:border-box;background:#fff;border-radius:24px;box-shadow:0 0 0 1px ${LINE},${SH_CARD};padding:32px`)}>
+    <div id="calculator" style={sx(`width:${typeof w === "number" ? `${w}px` : w};box-sizing:border-box;background:#fff;border-radius:24px;box-shadow:0 0 0 1px ${LINE},${SH_CARD};padding:32px`)}>
       <div style={sx(`font:600 18px ${SANS}`)}>Work out your school</div>
       <div style={sx("display:flex;gap:16px;margin-top:22px;align-items:flex-end")}>
         <div style={sx("width:200px")}>
           <label htmlFor={id} style={sx(`display:block;font:500 14px ${SANS};color:${INK};margin-bottom:8px`)}>Active pupils</label>
-          <div style={sx(`height:48px;border-radius:12px;background:#fff;box-shadow:inset 0 0 0 1px ${LINE};display:flex;align-items:center;justify-content:space-between;padding:0 16px;box-sizing:border-box;font:400 16px ${SANS}`)}>
+          <div className="field-box" style={sx(`height:48px;border-radius:12px;background:#fff;box-shadow:inset 0 0 0 1px ${LINE};display:flex;align-items:center;justify-content:space-between;padding:0 16px;box-sizing:border-box;font:400 16px ${SANS}`)}>
             <input id={id} inputMode="numeric" autoComplete="off" value={text}
               onChange={(e) => setText(e.target.value)} onBlur={() => setText(count(pupils))}
               style={sx(`color:${INK};font:inherit;width:100%;min-width:0;border:0;padding:0;margin:0;background:transparent;outline:none`)} />

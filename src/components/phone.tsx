@@ -41,7 +41,7 @@ export const ScaleTo = ({ w, h, tw = CW, children }: { w: number; h: number; tw?
 /** mobile.photo_card: the photograph, then a card over its lower edge at the card's own size */
 export const PhotoCard = ({ photo, pos, card, h = 240 }: { photo: string; pos: string; card?: ReactNode; h?: number }) => (
   <div>
-    <Ph n={photo} w={CW} h={h} pos={pos} r={20} />
+    <Ph n={photo} w="100%" h={h} pos={pos} r={20} />
     {card ? <div style={sx("margin:-64px 12px 0;position:relative;z-index:2")}>{card}</div> : null}
   </div>
 );
@@ -56,8 +56,8 @@ export const PlateCard = ({ card, art }: { card: ReactNode; art?: string | null 
 
 /** mobile.phone_on: a phone mock standing over a photograph */
 export const PhoneOn = ({ phone, photo, pos, h = 520 }: { phone: ReactNode; photo: string; pos: string; h?: number }) => (
-  <div style={sx(`position:relative;width:${CW}px;height:${h}px;border-radius:24px;overflow:hidden`)}>
-    <div style={sx("position:absolute;inset:0")}><Ph n={photo} w={CW} h={h} pos={pos} r={24} /></div>
+  <div style={sx(`position:relative;width:100%;height:${h}px;border-radius:24px;overflow:hidden`)}>
+    <div style={sx("position:absolute;inset:0")}><Ph n={photo} w="100%" h={h} pos={pos} r={24} /></div>
     <div style={sx("position:absolute;left:0;right:0;top:24px;display:flex;justify-content:center")}>{phone}</div>
   </div>
 );
@@ -89,7 +89,7 @@ const FragmentRow = ({ first, ...it }: { first: boolean; eye: ReactNode; k?: str
 export const MBand = ({ eye, k, h, b, photo, pos }: { eye: ReactNode; k: string; h: ReactNode; b: ReactNode; photo: string; pos: string }) => (
   <section style={sx(`background:${PLATE};padding:64px ${MX}px;display:flex;flex-direction:column;gap:14px`)}>
     <PEyebrow t={eye} k={k} /><H2 t={h} /><P t={b} />
-    <div style={sx("margin-top:14px")}><Ph n={photo} w={CW} h={240} pos={pos} r={20} /></div>
+    <div style={sx("margin-top:14px")}><Ph n={photo} w="100%" h={240} pos={pos} r={20} /></div>
   </section>
 );
 
@@ -201,7 +201,7 @@ export function MPriceBand() {
       <div style={sx("display:flex;flex-direction:column;gap:14px")}>
         <PEyebrow t="Pricing" k="pricing" /><H2 t={P_.h} /><P t={P_.b} />
         <div><Ticks items={["Setup, data capture and training free", "First month free", "Every department and portal included"]} size={15} /></div>
-        <div style={sx("margin-top:6px")}><Ph n="girl-beret.jpg" w={CW} h={300} pos="center 20%" r={20} /></div>
+        <div style={sx("margin-top:6px")}><Ph n="girl-beret.jpg" w="100%" h={300} pos="center 20%" r={20} /></div>
         <BtnFull label="See pricing" icon="arrow-right-line" kind="secondary" />
       </div>
     </Pad>
