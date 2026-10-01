@@ -4,4 +4,4 @@ import { Atkinson_Hyperlegible_Next, Inter, IBM_Plex_Mono, Newsreader } from "ne
 export const atkinson = Atkinson_Hyperlegible_Next({ weight: ["400", "500", "600"], subsets: ["latin", "latin-ext"], variable: "--font-atkinson" });
 export const inter = Inter({ weight: ["400", "500", "600"], subsets: ["latin"], variable: "--font-inter" });
 export const plexMono = IBM_Plex_Mono({ weight: ["400", "500"], subsets: ["latin"], variable: "--font-plex-mono" });
-export const newsreader = Newsreader({ subsets: ["latin"], axes: ["opsz"], variable: "--font-newsreader" });
+export const newsreader = Newsreader({ weight: ["400", "500"], subsets: ["latin"], variable: "--font-newsreader" });

@@ -34,3 +34,10 @@ export const fmt = (x: number, d = 0) => x.toFixed(d);
 export const PX = "max(120px, calc(50% - 600px))";
 /** the 80px gutter of the call-to-action block and the Who we serve focus plate, which are 1280 wide */
 export const PX80 = "max(80px, calc(50% - 640px))";
+
+/** Python's f"{x:.Nf}": like toFixed, but an exact half goes to the even neighbour (6.25 -> "6.2") */
+export function pyFixed(x: number, d: number): string {
+  const m = 10 ** d, v = x * m;
+  const r = Math.abs(v - Math.trunc(v)) === 0.5 ? pyRound(v) : Math.round(v);
+  return (r / m).toFixed(d);
+}
