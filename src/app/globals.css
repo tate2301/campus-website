@@ -92,3 +92,11 @@ details.faq[open] > summary > svg { transform: rotate(180deg); }
 
 /* The nav's menus (ds.mega_departments, ds.mega_who): the design draws a pointed-at item on the grey plate. */
 .mega-item:hover, .mega-item:focus-visible { background: var(--plate); }
+
+/* Phone strips drawn running off the right edge (the footer's school types, the school day, the integration
+   categories) scroll sideways once layout.tsx marks the page (at once on touch screens). They are drawn as
+   overflow:hidden; this overrides that, hides the scrollbar (the strip's cut-off edge already says there is more) and
+   snaps each item to the start. */
+[data-hscroll] .hscroll { overflow-x: auto !important; overflow-y: hidden !important; overscroll-behavior-x: contain; scroll-snap-type: x proximity; scrollbar-width: none; }
+.hscroll::-webkit-scrollbar { display: none; }
+.hscroll > * { scroll-snap-align: start; }

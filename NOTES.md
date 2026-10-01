@@ -159,6 +159,12 @@ acceptance test, because the references show the drawn version.
   44 px but not the department or portal drawings, so those are the 48 px drawing scaled to 44. The menus are desktop
   only; the phone has its own menu sheet.
 - The guide titles on Support are not links (the guides live in the app).
+- **The phone's sideways strips scroll.** The footer's school types, the school day on Day schools and the integration
+  categories are drawn running off the right edge; they scroll sideways and snap to each item. On a touch screen they
+  scroll from the start; with a mouse or trackpad (a narrow desktop window) they start scrolling at the first wheel,
+  click, touch or key. The reason: any scrollable strip on a page changes how Chromium rasterises all of the page's
+  text in a full-page screenshot (about 0.3% of a phone page's pixels), which fails the visual test. The test runs as a
+  mouse browser that never interacts, so it still sees the strips as drawn.
 - **The phone FAQ is an accordion**, as drawn (first question open): `<details>`, with the chevron turned when open.
 - **Reduced motion** stops the mark journey at 90% of its loop, with the mark delivered to all four places (the loop's
   last frame is empty).

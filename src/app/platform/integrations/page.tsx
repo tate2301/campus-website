@@ -23,7 +23,7 @@ function PhoneMarketplace() {
       <div style={sx("padding:0 14px 12px")}>
         <div style={sx(`display:flex;align-items:center;gap:8px;height:38px;padding:0 12px;border-radius:19px;background:#f2f4f7;font:400 13.5px ${SANS};color:${FAINT}`)}><Ic n="search" s={15} c={MUTED} />Search integrations</div>
       </div>
-      <div style={sx("display:flex;gap:8px;padding:0 14px 14px;overflow:hidden")}>
+      <div className="hscroll" style={sx("display:flex;gap:8px;padding:0 14px 14px;overflow:hidden;scroll-padding-left:14px")}>
         {cats.map((c, i) => (
           <span key={c} style={sx(`flex:none;height:34px;padding:0 14px;border-radius:17px;display:inline-flex;align-items:center;font:500 13.5px ${SANS};${i === 0 ? `background:${INK};color:#fff` : `background:#fff;color:${INK2};box-shadow:inset 0 0 0 1px ${LINE}`}`)}>{c}</span>
         ))}
