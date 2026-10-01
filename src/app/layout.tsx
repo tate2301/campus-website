@@ -8,6 +8,9 @@ import { atkinson, inter, plexMono, newsreader } from "./fonts";
 export const metadata: Metadata = {
   metadataBase: new URL("https://campus.corelith.co.zw"),
   title: { default: "Corelith Campus", template: "%s · Corelith Campus" },
+  // the shared images are app/**/opengraph-image.tsx (src/og/card.tsx); the icons come from scripts/icons.mjs
+  openGraph: { siteName: "Corelith Campus", locale: "en_GB", type: "website" },
+  twitter: { card: "summary_large_image" },
 };
 
 const ZOOM = `(function(){var d=document.documentElement;function z(){var w=d.clientWidth||innerWidth;d.style.setProperty("--dz",w>=1024&&w<1440?String(w/1440):"1")}z();addEventListener("resize",z)})()`;
