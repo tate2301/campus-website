@@ -28,5 +28,6 @@ export const LEGAL_HREF: Record<string, string> = { privacy: "/legal/privacy", d
 export const ACTION_HREF: Record<string, string> = {
   "Book a demo": "/demo", Demo: "/demo", "See pricing": "/pricing", "Download the price sheet (PDF)": "/pricing/price-sheet.pdf",
   "See who we serve": "/who-we-serve", "How we move your records": "/moving-to-campus", "See the integrations": "/platform/integrations",
-  "Work out your school": "/pricing#calculator", "Sign in": "/sign-in", "See the departments": "#departments",
+  "Work out your school": "/pricing#calculator", "Go to support": "/support", "Write to us": "#message",
+  "Open Help": "https://app.campus.corelith.co.zw", "Book a visit": "/contact#message", "Sign in": "/sign-in", "See the departments": "#departments",
 };

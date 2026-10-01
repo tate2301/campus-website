@@ -7,15 +7,15 @@ import { INK, SANS } from "@/lib/design";
  * CSS shows one of them (globals.css: phone up to 1023px, desktop from 1024px); the other is display:none, so it is
  * out of the accessibility tree and its lazy images are not fetched.
  */
-export function SitePage({ desktop, phone }: { desktop: ReactNode; phone?: ReactNode }) {
+export function SitePage({ desktop, phone, desktopStyle = "", phoneStyle = "" }: { desktop: ReactNode; phone?: ReactNode; desktopStyle?: string; phoneStyle?: string }) {
   return (
     <>
       <div className="layout-desktop" data-tree="desktop">
-        <div style={sx(`width:100%;background:#fff;font-family:${SANS};color:${INK}`)}>{desktop}</div>
+        <div style={sx(`width:100%;background:#fff;font-family:${SANS};color:${INK};${desktopStyle}`)}>{desktop}</div>
       </div>
       {phone ? (
         <div className="layout-phone" data-tree="phone">
-          <div style={sx(`width:100%;max-width:560px;margin:0 auto;background:#fff;font-family:${SANS};color:${INK};overflow:hidden`)}>{phone}</div>
+          <div style={sx(`width:100%;max-width:560px;margin:0 auto;background:#fff;font-family:${SANS};color:${INK};overflow:hidden;${phoneStyle}`)}>{phone}</div>
         </div>
       ) : null}
     </>

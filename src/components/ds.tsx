@@ -45,7 +45,7 @@ export const LogoOf = ({ r, s, c }: { r: string; s: number; c: string }) => <Art
 export function A({ href, style, children, label }: { href?: string; style?: string; label?: string } & Kids) {
   if (!href) return <span style={style ? sx(style) : undefined}>{children}</span>;
   const s = style ? sx(style) : undefined;
-  if (href.startsWith("http") || href.endsWith(".pdf")) return <a href={href} style={s} aria-label={label}>{children}</a>;
+  if (href.startsWith("http") || href.startsWith("#") || href.endsWith(".pdf")) return <a href={href} style={s} aria-label={label}>{children}</a>;
   // no viewport prefetch: a page carries dozens of links, and loading every route on arrival would hold up the page
   return <Link href={href} prefetch={false} style={s} aria-label={label}>{children}</Link>;
 }
