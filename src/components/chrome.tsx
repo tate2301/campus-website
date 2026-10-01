@@ -4,9 +4,12 @@
  */
 import { A, Cbtn, CorelithLogo, Eyebrow, Ic, MenuIcon, NavIcon, Ph, Pmark, btnStyle, sx } from "./ds";
 import { MobileMenu } from "./mobile-menu";
+import type { ReactNode } from "react";
+import { NavMenu } from "./nav-menu";
+import { Art, hasArt } from "./art";
 import { CP } from "@/content/copy";
-import { ACTION_HREF, FOOT_HREF, NAV_HREF, typeHref } from "@/content/links";
-import { FAINT, INK, INK2, LINE, MUTED, MX, PLATE, PX, SANS, pyRound } from "@/lib/design";
+import { ACTION_HREF, FOOT_HREF, NAV_HREF, deptHref, roleHref, typeHref } from "@/content/links";
+import { DOTS, FAINT, INK, INK2, LINE, MUTED, MX, PLATE, PX, SANS, pyRound } from "@/lib/design";
 
 /** common.lockup: the Campus mark tile, the name in lower case and, in the nav only, "by Corelith" */
 export function Lockup({ h = 24, ink = INK, by = true, href }: { h?: number; ink?: string; by?: boolean; href?: string }) {
@@ -23,17 +26,89 @@ export function Lockup({ h = 24, ink = INK, by = true, href }: { h?: number; ink
 
 const MENUS = ["Solutions", "Who we serve", "Platform"];
 
-/** ds.nav_bar: four items and one button; the section you are in is shown open */
+/**
+ * A drawing at 44 px, the size the menus draw them. The design exported the school buildings at 44 but not the
+ * department or portal drawings, so those are the 48 px drawing scaled to 44.
+ */
+function Icon44({ k }: { k: string }) {
+  if (hasArt(`${k}:44`)) return <Art k={`${k}:44`} />;
+  return (
+    <span style={sx("width:44px;height:44px;flex:none;display:block")}>
+      <span style={sx("width:48px;height:48px;display:block;transform:scale(0.916667);transform-origin:0 0")}><Art k={`${k}:48`} /></span>
+    </span>
+  );
+}
+
+/** ds.mega_departments: the nine departments, and Moving to Campus. The design draws the first highlighted: that is hover. */
+function MegaDepartments() {
+  return (
+    <div style={sx(`display:flex;gap:40px;padding:24px ${PX} 32px`)}>
+      <div style={sx("flex:1")}>
+        <div style={sx(`font:500 13px ${SANS};color:${MUTED};margin:0 0 8px 10px`)}>Departments</div>
+        <div style={sx("display:grid;grid-template-columns:repeat(3,1fr);gap:4px 8px")}>
+          {(CP.DEPARTMENTS as string[][]).map(([n, sl, , , k]) => (
+            <A key={sl} href={deptHref(sl)} className="mega-item" style="display:flex;gap:12px;align-items:center;padding:10px;border-radius:14px">
+              <Icon44 k={`nav:${sl}`} />
+              <div style={sx("min-width:0")}>
+                <div style={sx(`font:600 15px ${SANS};color:${INK}`)}>{n}</div>
+                <div style={sx(`font:400 13px/1.4 ${SANS};color:${MUTED};margin-top:2px`)}>{(CP.MENU_LINE as Record<string, string>)[k]}</div>
+              </div>
+            </A>
+          ))}
+        </div>
+      </div>
+      <div style={sx(`width:300px;border-radius:20px;${DOTS};padding:20px;box-sizing:border-box;flex:none`)}>
+        {/* ds.py writes this panel's copy inline */}
+        <div style={sx(`font:500 13px ${SANS};color:${MUTED}`)}>Moving to Campus</div>
+        <div style={sx(`font:600 20px/1.2 ${SANS};letter-spacing:-0.01em;margin-top:8px;color:${INK}`)}>Move your school in four weeks.</div>
+        <div style={sx(`font:400 13.5px/1.5 ${SANS};color:${INK2};margin-top:8px`)}>From another system, Excel or paper registers. Data capture is included.</div>
+        <div style={sx("margin-top:14px")}><Cbtn label="How we move your records" kind="link" size="sm" href="/moving-to-campus" /></div>
+      </div>
+    </div>
+  );
+}
+
+/** ds.mega_who: the five kinds of school with their buildings, and the people with their portal's icon */
+function MegaWho() {
+  const row = (key: string, href: string, icon: string, n: string, d: string) => (
+    <A key={key} href={href} className="mega-item" style="display:flex;gap:12px;align-items:center;padding:8px 10px;border-radius:14px">
+      <Icon44 k={icon} />
+      <div>
+        <div style={sx(`font:600 15px ${SANS};color:${INK}`)}>{n}</div>
+        <div style={sx(`font:400 13px/1.4 ${SANS};color:${MUTED};margin-top:2px`)}>{d}</div>
+      </div>
+    </A>
+  );
+  const head = (t: string) => <div style={sx(`font:500 13px ${SANS};color:${MUTED};margin:0 0 6px 10px`)}>{t}</div>;
+  return (
+    <div style={sx(`display:flex;gap:48px;padding:24px ${PX} 32px`)}>
+      <div style={sx("flex:1")}>{head("By type of school · K-12")}{(CP.SCHOOL_TYPES as string[][]).map(([n, k, d]) => row(k, typeHref(k), `nav:${k}`, n, d))}</div>
+      <div style={sx("flex:1")}>{head("By role")}{(CP.ROLES as string[][]).map(([n, p, d]) => row(n, roleHref(n), `portal:${p}`, n, d))}</div>
+    </div>
+  );
+}
+
+const MEGA: Record<string, [string, () => ReactNode]> = { Solutions: ["menu-solutions", MegaDepartments], "Who we serve": ["menu-who", MegaWho] };
+
+/**
+ * ds.nav_bar: four items and one button. Solutions and Who we serve open their menus; the section you are in keeps
+ * the grey pill (the design draws it with its menu open; here the chevron follows the menu).
+ */
 export function NavBar({ open }: { open?: string | null }) {
   return (
-    <header style={sx(`width:100%;height:76px;display:flex;align-items:center;gap:28px;padding:0 ${PX};box-sizing:border-box;border-bottom:1px solid ${LINE};background:#fff`)}>
+    <header style={sx(`position:relative;width:100%;height:76px;display:flex;align-items:center;gap:28px;padding:0 ${PX};box-sizing:border-box;border-bottom:1px solid ${LINE};background:#fff`)}>
       <Lockup h={24} href="/" />
       <nav aria-label="Main" style={sx("display:flex;gap:6px;margin-left:12px")}>
         {(CP.NAV as string[]).map((t) => {
           const on = t === open;
+          const style = `display:inline-flex;align-items:center;gap:4px;height:36px;padding:0 12px;border-radius:18px;${on ? `background:${PLATE};` : ""}font:500 15px ${SANS};color:${on ? INK : INK2}`;
+          if (MEGA[t]) {
+            const [id, Menu] = MEGA[t];
+            return <NavMenu key={t} id={id} label={t} buttonStyle={sx(style)} down={<Ic n="down-line" s={14} c={FAINT} />} up={<Ic n="up-line" s={14} c={FAINT} />} menu={<Menu />} />;
+          }
           return (
-            <A key={t} href={NAV_HREF[t]} style={`display:inline-flex;align-items:center;gap:4px;height:36px;padding:0 12px;border-radius:18px;${on ? `background:${PLATE};` : ""}font:500 15px ${SANS};color:${on ? INK : INK2}`}>
-              {t}{MENUS.includes(t) ? <Ic n={on ? "up-line" : "down-line"} s={14} c={FAINT} /> : null}
+            <A key={t} href={NAV_HREF[t]} style={style}>
+              {t}{MENUS.includes(t) ? <Ic n="down-line" s={14} c={FAINT} /> : null}
             </A>
           );
         })}

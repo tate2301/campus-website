@@ -89,3 +89,6 @@ details.faq[open] > summary > svg { transform: rotate(180deg); }
 .pill > input { position: absolute; inset: 0; margin: 0; opacity: 0; pointer-events: none; }
 .pill:has(input:checked) { background: var(--ink) !important; color: #fff !important; box-shadow: none !important; }
 .pill:has(input:focus-visible) { outline: 3px solid var(--accent-ring); outline-offset: 2px; }
+
+/* The nav's menus (ds.mega_departments, ds.mega_who): the design draws a pointed-at item on the grey plate. */
+.mega-item:hover, .mega-item:focus-visible { background: var(--plate); }
