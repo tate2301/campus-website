@@ -1,0 +1,37 @@
+{
+  "name": "corelith-campus-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "tsc --noEmit",
+    "test:visual": "playwright test",
+    "parity": "node scripts/parity.mjs",
+    "art": "node scripts/extract-art.mjs",
+    "pdf": "node scripts/price-sheet-pdf.mjs"
+  },
+  "dependencies": {
+    "next": "^16.3.8",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@iconify-json/mingcute": "^1.2.8",
+    "@playwright/test": "^1.56.1",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.6.3",
+    "@types/pixelmatch": "^5.2.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "node-html-parser": "^9.0.4",
+    "pixelmatch": "^5.3.0",
+    "pngjs": "^7.0.0",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "undici": "^8.11.2"
+  }
+}
