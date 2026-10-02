@@ -165,6 +165,12 @@ acceptance test, because the references show the drawn version.
   click, touch or key. The reason: any scrollable strip on a page changes how Chromium rasterises all of the page's
   text in a full-page screenshot (about 0.3% of a phone page's pixels), which fails the visual test. The test runs as a
   mouse browser that never interacts, so it still sees the strips as drawn.
+- **The integrations hub is the Corelith Plugins and Integrations Hub**, not a Campus marketplace (Corelith's correction,
+  2 Oct 2026). `copy.json` and `site_words.py` now say so in the Integrations hero line, the section eyebrow
+  ("Plugins and integrations") and headline, and the FAQ answer; schools still open it from the Administration
+  portal. The drawn hub card's header shows the Corelith logo and "Plugins and Integrations Hub" in place of the
+  Campus mark and "Integrations" (one line at 14 px on the phone). `/platform/integrations` therefore differs from its
+  references in that section at both widths.
 - **The phone FAQ is an accordion**, as drawn (first question open): `<details>`, with the chevron turned when open.
 - **Reduced motion** stops the mark journey at 90% of its loop, with the mark delivered to all four places (the loop's
   last frame is empty).

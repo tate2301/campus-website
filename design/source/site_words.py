@@ -343,8 +343,8 @@ PLATFORM = dict(
 
 INTEG = dict(
     eyebrow="Integrations", h="Connect the software your bursar already uses.",
-    b="Campus sends journals to Sage Pastel and QuickBooks, issues fiscal receipts through ZIMRA, and matches EcoCash and bank payments to each pupil. Add more from the marketplace.",
-    market_eye="Marketplace", market_h="Add the rest from the Campus marketplace.",
+    b="Campus sends journals to Sage Pastel and QuickBooks, issues fiscal receipts through ZIMRA, and matches EcoCash and bank payments to each pupil. Add more from the Corelith Plugins and Integrations Hub.",
+    market_eye="Plugins and integrations", market_h="Add the rest from the Corelith Plugins and Integrations Hub.",
     rows=[("Sage Pastel", "integrations", "Post the day's journal to Sage Pastel.",
            "Fees, payroll and purchases go to your Pastel ledger as one journal, mapped to your chart of accounts. Your accountant keeps working in Pastel.",
            "journal_card", "Sage Pastel"),
@@ -359,7 +359,7 @@ INTEG = dict(
            "payments_card", None)],
     faq=[("Do we have to change our accounting software?", "No. Campus sends journals to the Sage Pastel or QuickBooks you use now."),
          ("Who sets up the links?", "We do, during setup, with your bursar and your accountant."),
-         ("How do we add an integration?", "From the marketplace in the Administration portal. The Head or the bursar adds it, and we help with the setup."),
+         ("How do we add an integration?", "From the Corelith Plugins and Integrations Hub, in the Administration portal. The Head or the bursar adds it, and we help with the setup."),
          ("Do the links cost extra?", "No. Pastel, QuickBooks and ZIMRA are part of Campus at US$1 per active pupil per month.")],
 )
 

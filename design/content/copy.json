@@ -1879,9 +1879,9 @@
   "INTEG": {
    "eyebrow": "Integrations",
    "h": "Connect the software your bursar already uses.",
-   "b": "Campus sends journals to Sage Pastel and QuickBooks, issues fiscal receipts through ZIMRA, and matches EcoCash and bank payments to each pupil. Add more from the marketplace.",
-   "market_eye": "Marketplace",
-   "market_h": "Add the rest from the Campus marketplace.",
+   "b": "Campus sends journals to Sage Pastel and QuickBooks, issues fiscal receipts through ZIMRA, and matches EcoCash and bank payments to each pupil. Add more from the Corelith Plugins and Integrations Hub.",
+   "market_eye": "Plugins and integrations",
+   "market_h": "Add the rest from the Corelith Plugins and Integrations Hub.",
    "rows": [
     [
      "Sage Pastel",
@@ -1927,7 +1927,7 @@
     ],
     [
      "How do we add an integration?",
-     "From the marketplace in the Administration portal. The Head or the bursar adds it, and we help with the setup."
+     "From the Corelith Plugins and Integrations Hub, in the Administration portal. The Head or the bursar adds it, and we help with the setup."
     ],
     [
      "Do the links cost extra?",
