@@ -3,7 +3,7 @@ import "./globals.css";
 // the two animations, as the design exports them
 import "../../design/components/mark-journey.css";
 import "../../design/components/hover-reveal.css";
-import { atkinson, inter, plexMono, newsreader } from "./fonts";
+import { generalSans, inter, plexMono, newsreader } from "./fonts";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://campus.corelith.co.zw"),
@@ -25,7 +25,7 @@ const HSCROLL = `(function(){var d=document.documentElement;function on(){d.data
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-GB" suppressHydrationWarning className={`${atkinson.variable} ${inter.variable} ${plexMono.variable} ${newsreader.variable}`}>
+    <html lang="en-GB" suppressHydrationWarning className={`${generalSans.variable} ${inter.variable} ${plexMono.variable} ${newsreader.variable}`}>
       <head>
         {/* From 1024 to 1439px the desktop layout is shown whole, scaled to the window: the gutter goes from 120px to
             85px at 1024 (8.3vw, as the brief asks) and the drawn pictures keep their proportions. */}

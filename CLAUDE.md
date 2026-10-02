@@ -24,7 +24,7 @@ You are building the marketing site for Corelith Campus, cloud-based school mana
 
 - Next.js (App Router), TypeScript, React Server Components by default, static generation for every marketing route.
 - Tailwind CSS with the tokens from `spec/tokens.css` as CSS variables. No component library.
-- Fonts through `next/font/google`: Atkinson Hyperlegible Next (400, 500, 600) for everything, Inter only inside the phone mock-ups, IBM Plex Mono (400, 500), and Newsreader for the one report document.
+- Fonts: General Sans (400, 500, 600) for everything, through `next/font/local` from files `scripts/fonts.mjs` fetches (the licence forbids committing them; see `docs/typography.md`, which replaces Atkinson Hyperlegible Next and sets the type rules), and through `next/font/google`: Inter only inside the phone mock-ups, IBM Plex Mono (400, 500), and Newsreader for the one report document.
 - `next/image` for photographs. Logos and drawings stay inline SVG.
 - The price sheet at `/pricing/price-sheet.pdf` is a generated A4 PDF that matches `reference/desktop/price-sheet.jpg`.
 - Sign-in lives on the app domain (`app.campus.corelith.co.zw`). Build it as `/sign-in` in this repo as a static screen; each school reaches it on its own address, so there is no school picker.

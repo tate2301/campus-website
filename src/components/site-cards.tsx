@@ -391,7 +391,7 @@ export const AiCard = ({ w = 340 }: { w?: number }) => (
   <Card w={w}>
     <Chead icon="sparkles" title="Ask the library" meta="Student portal" />
     <AiBub t="Why does a plant cell have a cell wall?" me={true} />
-    <AiBub t="The cell wall keeps the cell's shape and stops it bursting when it takes in water. See page 14 of your notes." me={false} />
+    <AiBub t="The cell wall keeps the cell’s shape and stops it bursting when it takes in water. See page 14 of your notes." me={false} />
     <span style={sx(`display:inline-flex;align-items:center;gap:6px;height:24px;padding:0 9px;border-radius:12px;box-shadow:inset 0 0 0 1px ${LINE};font:500 11.5px ${SANS};color:${INK2};margin-top:8px`)}>
       <Ic n="book-2" s={12} c={MUTED} />Form 2 Science notes · Mr Chari
     </span>

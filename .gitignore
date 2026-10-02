@@ -11,3 +11,6 @@ design/tests/diff/
 __pycache__/
 .env
 .env.local
+
+# General Sans is fetched by scripts/fonts.mjs (ITF FFL: no redistribution from a public repository)
+src/fonts/
