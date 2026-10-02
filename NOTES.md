@@ -165,6 +165,21 @@ acceptance test, because the references show the drawn version.
   click, touch or key. The reason: any scrollable strip on a page changes how Chromium rasterises all of the page's
   text in a full-page screenshot (about 0.3% of a phone page's pixels), which fails the visual test. The test runs as a
   mouse browser that never interacts, so it still sees the strips as drawn.
+- **The integrations hub is the Corelith Plugins and Integrations Hub**, not a Campus marketplace (Corelith's correction,
+  2 Oct 2026). `copy.json` and `site_words.py` now say so in the Integrations hero line, the section eyebrow
+  ("Plugins and integrations") and headline, and the FAQ answer; schools still open it from the Administration
+  portal. The drawn hub card's header shows the Corelith logo and "Plugins and Integrations Hub" in place of the
+  Campus mark and "Integrations" (one line at 14 px on the phone). `/platform/integrations` therefore differs from its
+  references in that section at both widths.
+- **Typography (2 Oct 2026): General Sans, and one set of type rules.** Corelith asked for the type of
+  pierrickcalvez.com and the lessons of a list of typography sources. That site's face, Apercu, is paid; General Sans
+  (Fontshare) is the free face closest to it and replaces Atkinson Hyperlegible Next everywhere. Sizes snap to one
+  scale, and leading and tracking follow the size (`src/lib/type.ts`, applied by `sx()`). Apostrophes are curly, and
+  non-breaking spaces keep "US$1 per", "Form 3B" and "Week 1" together. The legal text column is 640 px (66 characters).
+  Figures that change or line up use Inter's tabular figures, because General Sans has none. The font files are fetched
+  by `scripts/fonts.mjs` and not committed (licence). The sources, the rules and every decision are in
+  `docs/typography.md`. **The visual test no longer applies to type:** the references show the Atkinson design, so
+  every route differs from them.
 - **The phone FAQ is an accordion**, as drawn (first question open): `<details>`, with the chevron turned when open.
 - **Reduced motion** stops the mark journey at 90% of its loop, with the mark delivered to all four places (the loop's
   last frame is empty).
@@ -173,7 +188,7 @@ acceptance test, because the references show the drawn version.
   `npm run icons` (`scripts/icons.mjs`) from `design/components/campus-mark-64.html`. Each route's Open Graph / X
   image (`opengraph-image.tsx`, rendered by `src/og/card.tsx` at build time) is the nav lockup, the page's name as a
   blue eyebrow and its headline from `copy.json`; the lockup keeps "by Corelith" because a shared link stands on its
-  own. Satori needs TTF, so Atkinson Hyperlegible Next 400/500/600 is kept in `src/og/fonts` (OFL, as the site's).
+  own. The shared-link images are set in General Sans from the TTF files that `scripts/fonts.mjs` fetches.
 
 ## The forms
 

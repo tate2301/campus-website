@@ -33,11 +33,11 @@ Tatenda: "I really love how their website is typographically driven." Then: "our
 - Labels: portal pill (blue icon tile + "Teacher portal") on a stem ending in a dot on the building; modules as grey chips beside it.
 
 ## UI cards
-- Atkinson Hyperlegible Next, radius 16, one soft shadow, round status pills with a dot.
+- General Sans (was Atkinson Hyperlegible Next; see docs/typography.md), radius 16, one soft shadow, round status pills with a dot.
 - On a plate: #f4f5f7 with the dot grid, radius 24.
 
 ## Type
-- Atkinson Hyperlegible Next 400, 500, 600; IBM Plex Mono for codes only (M·01, R-2026-18824, 07:42 in tables).
+- General Sans 400, 500, 600 (was Atkinson Hyperlegible Next; type rules in docs/typography.md); IBM Plex Mono for codes only (M·01, R-2026-18824, 07:42 in tables).
 - Headings two-tone: first line ink, second line #9a9ea9. Sentence case, no uppercase.
 
 ## Colour

@@ -9,7 +9,7 @@
   /* status */
   --ok: #12805c; --ok-tint: #e5f4ec; --warn: #a15c07; --warn-tint: #fdf1dc; --bad: #be123c; --bad-tint: #fde7ec;
   /* type */
-  --font-sans: 'Atkinson Hyperlegible Next', sans-serif;   /* everything on the site */
+  --font-sans: 'General Sans', sans-serif;                 /* everything on the site (was Atkinson Hyperlegible Next; docs/typography.md) */
   --font-ui: 'Inter', sans-serif;                          /* inside phone screens only */
   --font-mono: 'IBM Plex Mono', monospace;                 /* times, codes, references */
   --font-serif: 'Newsreader', serif;                       /* the authority report document only */

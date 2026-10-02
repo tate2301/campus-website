@@ -14,8 +14,8 @@ export const metadata: Metadata = { title: "Moving to Campus", description: CP.S
 const PLAN_EYE = "The four weeks", PLAN_H = "From your old system to your first term on Campus.";
 const WHAT_EYE = "What moves", WHAT_H = "Everything the school keeps, on one record.";
 const FAQ_H = "What schools ask before they move.";
-const LINES = ["Every pupil's record with their guardians, class and house.", "Contracts, leave balances and the details payroll needs.",
-  "Each family's balance in US dollars and ZiG, signed off by the bursar.", "This year's marks and the reports already sent home.",
+const LINES = ["Every pupil’s record with their guardians, class and house.", "Contracts, leave balances and the details payroll needs.",
+  "Each family’s balance in US dollars and ZiG, signed off by the bursar.", "This year’s marks and the reports already sent home.",
   "Forms, subjects, rooms and the timetable for the term.", "Stores, uniforms and textbooks, with what is issued to whom."];
 const KEYS = ["Parent", "hr-payroll", "fees", "record", "calendar-t", "stock"];
 const SHOTS: [string, string][] = [["mother-phone.jpg", "65% center"], ["teacher-notebook.jpg", "center 25%"], ["classroom-uniforms.jpg", "center"],

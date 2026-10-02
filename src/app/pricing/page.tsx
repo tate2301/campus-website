@@ -14,7 +14,7 @@ import { CW, DOTS, GAP, INK2, MX, PLATE, PX, SANS, pyRound } from "@/lib/design"
 export const metadata: Metadata = { title: "Pricing", description: SW.PRICE.b };
 
 // written into webpages.pricing_secs and mobile.pricing, not in the copy modules
-const CALC_HEAD = "Your school's figure, before you call us.";
+const CALC_HEAD = "Your school’s figure, before you call us.";
 const INCL_HEAD = "Everything, at US$1 per active pupil per month.";
 const SETUP_HEAD = "Running in four weeks, with us at the school.";
 const FAQ_HEAD = "What schools ask about the price.";

@@ -14,7 +14,7 @@
    "body_phone": "Every department in your school on one record. It runs in the cloud and works without internet.",
    "cta": "Book a demo",
    "cta2": "See the departments",
-   "note": "Setup and training free. First month free, then US$1 per active pupil per month."
+   "note": "Setup and training free. First month free, then US$1 per active pupil per month."
   },
   "LOGOS": "Schools on Corelith Campus",
   "PORTALS_H": [
@@ -28,7 +28,7 @@
     "n": "01",
     "tag": "All four portals · offline",
     "h": "Campus works without internet.",
-    "b": "Ms Sibanda marks Form 3B on the classroom tablet at 07:42. There is no internet, so the register saves on the tablet. When the connection is back it syncs, and the office knows who is absent before first break.",
+    "b": "Ms Sibanda marks Form 3B on the classroom tablet at 07:42. There is no internet, so the register saves on the tablet. When the connection is back it syncs, and the office knows who is absent before first break.",
     "pts": [
      "Every portal works offline: registers, marks, fees, payroll",
      "Sync starts on its own; a button forces it",
@@ -40,7 +40,7 @@
     "n": "02",
     "tag": "One record · four portals",
     "h": "Record a mark once. Everyone sees the same one.",
-    "b": "Ms Sibanda records Tanaka's Mathematics mark once. The term report, his mother's phone, the Head's view and Tanaka's own portal all read that record, so nobody retypes it and no two figures disagree.",
+    "b": "Ms Sibanda records Tanaka’s Mathematics mark once. The term report, his mother’s phone, the Head’s view and Tanaka’s own portal all read that record, so nobody retypes it and no two figures disagree.",
     "pts": [
      "Marks feed the report as they are entered",
      "Reports go out on the day the term closes",
@@ -52,7 +52,7 @@
     "n": "03",
     "tag": "Administration portal · fees",
     "h": "Fees in US dollars and ZiG, matched to each pupil.",
-    "b": "EcoCash, bank transfers and cash at the bursary land on the pupil's account with a receipt number. The bursar sees who has paid and who owes, and reminders go out without a phone call.",
+    "b": "EcoCash, bank transfers and cash at the bursary land on the pupil’s account with a receipt number. The bursar sees who has paid and who owes, and reminders go out without a phone call.",
     "pts": [
      "Each payment keeps the currency it was paid in",
      "Receipts numbered and printed or sent",
@@ -64,7 +64,7 @@
     "n": "04",
     "tag": "Parent portal",
     "h": "Parents see the week as it happens.",
-    "b": "Attendance, marks, fees and reports reach the parent's phone in the week they happen, with a line to the class teacher. Nobody waits for the end of term to find out.",
+    "b": "Attendance, marks, fees and reports reach the parent’s phone in the week they happen, with a line to the class teacher. Nobody waits for the end of term to find out.",
     "pts": [
      "Works on any phone, including a shared one",
      "Messages go to the class teacher, not a group",
@@ -81,7 +81,7 @@
    [
     "9",
     "departments",
-    "from admissions to the Head's view"
+    "from admissions to the Head’s view"
    ],
    [
     "US$1",
@@ -99,7 +99,7 @@
    ""
   ],
   "PRICING": {
-   "h": "US$1 per active pupil per month.",
+   "h": "US$1 per active pupil per month.",
    "b": "No licence fee and no charge per user. You pay for pupils on the roll in the months the school is open.",
    "main": {
     "name": "Campus",
@@ -119,8 +119,8 @@
     "per": "per active pupil per month",
     "items": [
      "Everything in Campus",
-     "Lessons, homework and the school's own library",
-     "AI help from the school's material, logged and switchable",
+     "Lessons, homework and the school’s own library",
+     "AI help from the school’s material, logged and switchable",
      "Replaces the US$1 rate"
     ]
    },
@@ -131,12 +131,12 @@
    },
    "timeline": [
     [
-     "Weeks 1–2",
+     "Weeks 1–2",
      "Setup",
      "Forms, fee structure and staff loaded"
     ],
     [
-     "Weeks 3–4",
+     "Weeks 3–4",
      "Training",
      "Office, staffroom and parents"
     ],
@@ -202,7 +202,7 @@
    [
     "Admissions and enrolment",
     "admissions",
-    "From the first enquiry to a Form 1 place, with the pupil's record started on the application.",
+    "From the first enquiry to a Form 1 place, with the pupil’s record started on the application.",
     "Administration",
     "admissions"
    ],
@@ -216,7 +216,7 @@
    [
     "Accounting",
     "accounting",
-    "The school's books, with journals sent to Sage Pastel or QuickBooks and fiscal receipts through ZIMRA.",
+    "The school’s books, with journals sent to Sage Pastel or QuickBooks and fiscal receipts through ZIMRA.",
     "Administration",
     "accounting"
    ],
@@ -230,7 +230,7 @@
    [
     "Boarding and welfare",
     "boarding",
-    "Houses, exeats, roll call and the sick bay, on each boarder's record.",
+    "Houses, exeats, roll call and the sick bay, on each boarder’s record.",
     "Student",
     "boarding"
    ],
@@ -268,7 +268,7 @@
    [
     "Single record",
     "One record for every person in the school.",
-    "Each pupil, guardian and member of staff has one record. Admissions starts it, teachers add marks, the bursary adds payments, and the Head reads the same figures. It is the school's single source of truth."
+    "Each pupil, guardian and member of staff has one record. Admissions starts it, teachers add marks, the bursary adds payments, and the Head reads the same figures. It is the school’s single source of truth."
    ],
    [
     "Works without internet",
@@ -278,7 +278,7 @@
    [
     "Integrations",
     "Connect the software your bursar already uses.",
-    "Campus sends journals to Sage Pastel and QuickBooks, and issues fiscal receipts through ZIMRA's Fiscalisation Data Management System."
+    "Campus sends journals to Sage Pastel and QuickBooks, and issues fiscal receipts through ZIMRA’s Fiscalisation Data Management System."
    ],
    [
     "Training and support",
@@ -287,7 +287,7 @@
    ],
    [
     "Data and security",
-    "Your school's data stays yours.",
+    "Your school’s data stays yours.",
     "Campus is cloud-based, backed up every day and exportable in full. Each person sees what their role needs, and every change records who made it."
    ]
   ],
@@ -300,7 +300,7 @@
    [
     "Boarding schools",
     "t-boarding",
-    "Houses, exeats, roll call and boarding fees on each boarder's record."
+    "Houses, exeats, roll call and boarding fees on each boarder’s record."
    ],
    [
     "Government schools",
@@ -310,7 +310,7 @@
    [
     "Private schools",
     "t-private",
-    "Admissions, fees and the board's figures, with a portal for every family."
+    "Admissions, fees and the board’s figures, with a portal for every family."
    ],
    [
     "Mission schools",
@@ -326,7 +326,7 @@
    [
     "School leadership",
     "Administration",
-    "The Head's view for the Head, the deputies and the SDC.",
+    "The Head’s view for the Head, the deputies and the SDC.",
     "insights"
    ],
    [
@@ -382,17 +382,17 @@
    "b": "We move your records from your current system, Excel sheets or paper registers. Data capture is included, and the old system stays readable until you switch it off.",
    "steps": [
     [
-     "Week 1",
+     "Week 1",
      "Collect",
      "We take an export from your current system, your Excel sheets or the paper registers, and agree with you what moves."
     ],
     [
-     "Week 2",
+     "Week 2",
      "Map and import",
      "Pupils, guardians, staff, fee balances and past marks go onto one record each. You check a sample before anything goes live."
     ],
     [
-     "Weeks 3–4",
+     "Weeks 3–4",
      "Train",
      "We train the office, the bursary and the staffroom at the school, and send every parent a sign-in."
     ],
@@ -441,7 +441,7 @@
     [
      "Registers",
      "Mark the register before the first lesson.",
-     "Open Form 3B on a tablet or phone and tap who is absent. The office sees absences by 08:05, even when the register was marked offline."
+     "Open Form 3B on a tablet or phone and tap who is absent. The office sees absences by 08:05, even when the register was marked offline."
     ],
     [
      "Marks and reports",
@@ -456,7 +456,7 @@
     [
      "Family communication",
      "Parents see the week as it happens.",
-     "Attendance, marks and homework reach the parent's phone that week, with a line to the class teacher."
+     "Attendance, marks and homework reach the parent’s phone that week, with a line to the class teacher."
     ]
    ],
    "tools_h": "Everything the staffroom uses",
@@ -475,21 +475,21 @@
   },
   "MENU_LINE": {
    "academics": "Registers, marks, timetables, reports",
-   "admissions": "Enquiries, applications, Form 1 places",
+   "admissions": "Enquiries, applications, Form 1 places",
    "fees": "Billing in US dollars and ZiG",
    "accounting": "The books, Pastel, QuickBooks, ZIMRA",
    "hr": "Staff records, leave, payroll",
    "boarding": "Houses, exeats, roll call, sick bay",
    "stock": "Stores, uniforms, textbooks, repairs",
    "comms": "Messages to guardians and classes",
-   "insights": "The Head's view, for the SDC"
+   "insights": "The Head’s view, for the SDC"
   }
  },
  "site_words": {
   "DEPTS": {
    "admissions": {
     "h": "From the first enquiry to the first day of term.",
-    "b": "Take enquiries, applications and Form 1 places in one place. The pupil's record starts with the application, so nobody types the family's details twice.",
+    "b": "Take enquiries, applications and Form 1 places in one place. The pupil’s record starts with the application, so nobody types the family’s details twice.",
     "hero": [
      "office-phone.jpg",
      "center 30%",
@@ -498,7 +498,7 @@
     ],
     "band": [
      "The record starts on the application form.",
-     "The guardian's details, the Grade 7 results and the documents you collect stay on the pupil's record after they accept. Fees, the class list and the Parent portal all start from it.",
+     "The guardian’s details, the Grade 7 results and the documents you collect stay on the pupil’s record after they accept. Fees, the class list and the Parent portal all start from it.",
      "girl-desk.jpg",
      "center 35%"
     ],
@@ -580,7 +580,7 @@
     ],
     "band": [
      "The bursar and the family see the same balance.",
-     "Each payment updates the pupil's account as it lands. The Parent portal shows the balance the bursary sees, with a receipt for every payment.",
+     "Each payment updates the pupil’s account as it lands. The Parent portal shows the balance the bursary sees, with a receipt for every payment.",
      "mother-child.jpg",
      "center 30%"
     ],
@@ -652,7 +652,7 @@
     ]
    },
    "accounting": {
-    "h": "The school's books, kept with the fees.",
+    "h": "The school’s books, kept with the fees.",
     "b": "Campus posts fees, payroll and purchases to the ledger as they happen. Send journals to Sage Pastel or QuickBooks, and issue fiscal receipts through ZIMRA.",
     "hero": [
      "office-papers.jpg",
@@ -661,7 +661,7 @@
      "journal_card"
     ],
     "band": [
-     "Your accountant works from the bursary's figures.",
+     "Your accountant works from the bursary’s figures.",
      "Every receipt, payslip and purchase order is already on the record. Month-end starts with the books up to date, not with a pile of receipts.",
      "accountant-man.jpg",
      "center 30%"
@@ -697,7 +697,7 @@
       "Fiscalisation",
       "pricesheet",
       "Issue fiscal receipts through ZIMRA.",
-      "Campus issues fiscal receipts through ZIMRA's Fiscalisation Data Management System, with the verification code printed on every receipt.",
+      "Campus issues fiscal receipts through ZIMRA’s Fiscalisation Data Management System, with the verification code printed on every receipt.",
       [
        "plate",
        [
@@ -808,7 +808,7 @@
    },
    "boarding": {
     "h": "Every boarder accounted for, morning and night.",
-    "b": "Houses, roll call, exeats and the sick bay on each boarder's record. Housemasters and the office work from the same list.",
+    "b": "Houses, roll call, exeats and the sick bay on each boarder’s record. Housemasters and the office work from the same list.",
     "hero": [
      "lining-up.jpg",
      "center 40%",
@@ -817,7 +817,7 @@
     ],
     "band": [
      "The hostel works from the same record as the classroom.",
-     "A boarder's house, room, guardians and fees sit on one record. When a pupil signs out on exeat, the house list and the duty teacher know.",
+     "A boarder’s house, room, guardians and fees sit on one record. When a pupil signs out on exeat, the house list and the duty teacher know.",
      "kids-lunch.jpg",
      "center 40%"
     ],
@@ -860,7 +860,7 @@
      [
       "Sick bay",
       "support",
-      "Keep the sick bay's log on the record.",
+      "Keep the sick bay’s log on the record.",
       "Matron logs each visit and tells the guardian from Campus. Class teachers see who is off lessons.",
       [
        "plate",
@@ -899,7 +899,7 @@
     ],
     "band": [
      "Issue an item once and the record keeps track.",
-     "A textbook issued to Tanaka stays on his record until he returns it. Uniform sales go to the family's fee account.",
+     "A textbook issued to Tanaka stays on his record until he returns it. Uniform sales go to the family’s fee account.",
      "girls-backpacks.jpg",
      "center 35%"
     ],
@@ -925,7 +925,7 @@
       "Textbooks and uniforms",
       "academics",
       "Issue textbooks and uniforms against a name.",
-      "Pick each item as you hand it out. Uniform sales go to the family's fee account, and textbooks come back at the end of the year.",
+      "Pick each item as you hand it out. Uniform sales go to the family’s fee account, and textbooks come back at the end of the year.",
       [
        "photo",
        "class-desks.jpg",
@@ -981,7 +981,7 @@
     ],
     "band": [
      "Every message lands with the right family.",
-     "Campus knows each pupil's guardians, class and house, so a message to Form 3B reaches the right parents. Every message stays on the record.",
+     "Campus knows each pupil’s guardians, class and house, so a message to Form 3B reaches the right parents. Every message stays on the record.",
      "day-pupils.jpg",
      "center 40%"
     ],
@@ -1006,8 +1006,8 @@
      [
       "Dates and events",
       "calendar-t",
-      "Put the term's dates on every parent's phone.",
-      "Send the newsletter, sports fixtures and the term's dates. Parents see them in the portal, with a reminder the day before.",
+      "Put the term’s dates on every parent’s phone.",
+      "Send the newsletter, sports fixtures and the term’s dates. Parents see them in the portal, with a reminder the day before.",
       [
        "photo",
        "sports-day.jpg",
@@ -1062,7 +1062,7 @@
      "collected_card"
     ],
     "band": [
-     "Answer the board's questions before the meeting.",
+     "Answer the board’s questions before the meeting.",
      "Every figure opens the records behind it. When the SDC asks why fees collected dropped, you open the list of families, not a spreadsheet.",
      "exam-blue.jpg",
      "center 40%"
@@ -1122,7 +1122,7 @@
      ]
     ],
     "tools": [
-     "The Head's view",
+     "The Head’s view",
      "Attendance by form and house",
      "Fees collected and arrears",
      "Results by subject and form",
@@ -1176,8 +1176,8 @@
      [
       "Transport",
       "t-day",
-      "Keep bus lists on the pupil's record.",
-      "Each pupil's route and stop sit on their record, and transport bills with fees. Drivers see the list for their route.",
+      "Keep bus lists on the pupil’s record.",
+      "Each pupil’s route and stop sit on their record, and transport bills with fees. Drivers see the list for their route.",
       [
        "photo",
        "classroom-zambia.jpg",
@@ -1196,7 +1196,7 @@
    "t-boarding": {
     "name": "Boarding schools",
     "h": "Run the hostel and the classroom on one record.",
-    "b": "Houses, exeats, roll call and boarding fees sit on each boarder's record, next to their marks and reports.",
+    "b": "Houses, exeats, roll call and boarding fees sit on each boarder’s record, next to their marks and reports.",
     "hero": [
      "boys-reading.jpg",
      "center 40%",
@@ -1272,7 +1272,7 @@
       "Fees and levies",
       "fees",
       "Bill tuition and levies the way your SDC sets them.",
-      "Set tuition, levies and building funds by form, in US dollars and ZiG. Every payment gets a receipt and lands on the pupil's account.",
+      "Set tuition, levies and building funds by form, in US dollars and ZiG. Every payment gets a receipt and lands on the pupil’s account.",
       [
        "plate",
        [
@@ -1345,7 +1345,7 @@
       "Parent portal",
       "Parent",
       "Show parents the term as it happens.",
-      "Attendance, marks, fees and reports reach each family's phone that week, with a line to the class teacher.",
+      "Attendance, marks, fees and reports reach each family’s phone that week, with a line to the class teacher.",
       [
        "phone"
       ]
@@ -1375,7 +1375,7 @@
       "Day and boarding",
       "t-mission",
       "Day scholars and boarders on one register.",
-      "Mark day scholars and boarders on one class register. Boarders also appear on their house's roll call, and fees bill by the type of place.",
+      "Mark day scholars and boarders on one class register. Boarders also appear on their house’s roll call, and fees bill by the type of place.",
       [
        "plate",
        [
@@ -1415,7 +1415,7 @@
     "name": "School leadership",
     "portal": "Administration",
     "h": "See the whole school before the first lesson.",
-    "b": "The Head's view shows attendance, fees, results and staffing from the record, for the Head, the deputies and the SDC or board.",
+    "b": "The Head’s view shows attendance, fees, results and staffing from the record, for the Head, the deputies and the SDC or board.",
     "hero": [
      "teacher-garden.jpg",
      "center 30%",
@@ -1498,7 +1498,7 @@
       "Payments",
       "fees",
       "Match every payment to a pupil.",
-      "EcoCash, bank and cash payments land on the pupil's account with a receipt number. Families see the same balance you do.",
+      "EcoCash, bank and cash payments land on the pupil’s account with a receipt number. Families see the same balance you do.",
       [
        "plate",
        [
@@ -1604,7 +1604,7 @@
       "Parents",
       "communication",
       "Reply to parents without giving out your number.",
-      "Parents message you in the Parent portal. You reply from the Teacher portal, and the conversation stays on the pupil's record.",
+      "Parents message you in the Parent portal. You reply from the Teacher portal, and the conversation stays on the pupil’s record.",
       [
        "plate",
        [
@@ -1628,7 +1628,7 @@
     "name": "Boarding staff",
     "portal": "Administration",
     "h": "Roll call, exeats and the sick bay, house by house.",
-    "b": "Housemasters, matrons and duty teachers work from each boarder's record, on a phone, with or without internet.",
+    "b": "Housemasters, matrons and duty teachers work from each boarder’s record, on a phone, with or without internet.",
     "hero": [
      "girls-smiling.jpg",
      "center 35%",
@@ -1675,7 +1675,7 @@
       "Sick bay",
       "support",
       "Tell guardians and class teachers in one step.",
-      "Log a sick bay visit and Campus tells the guardian and the class teacher. The visit stays on the boarder's record.",
+      "Log a sick bay visit and Campus tells the guardian and the class teacher. The visit stays on the boarder’s record.",
       [
        "plate",
        [
@@ -1698,7 +1698,7 @@
    "parents": {
     "name": "Parents and guardians",
     "portal": "Parent",
-    "h": "Your child's week, on your phone.",
+    "h": "Your child’s week, on your phone.",
     "b": "Attendance, marks, fees and reports in the Parent portal, on any phone. Pay fees by EcoCash and message the class teacher.",
     "hero": [
      "father-son.jpg",
@@ -1774,7 +1774,7 @@
       "Timetable",
       "calendar-t",
       "Know where the next lesson is.",
-      "The day's lessons, rooms and teachers, updated when the timetable changes.",
+      "The day’s lessons, rooms and teachers, updated when the timetable changes.",
       [
        "plate",
        [
@@ -1808,8 +1808,8 @@
      [
       "Library",
       "ai",
-      "Read the school's library and ask it questions.",
-      "With Campus with LMS and e-library, pupils read the school's own library and ask it questions. Each use is logged, and the school can switch AI off.",
+      "Read the school’s library and ask it questions.",
+      "With Campus with LMS and e-library, pupils read the school’s own library and ask it questions. Each use is logged, and the school can switch AI off.",
       [
        "plate",
        [
@@ -1851,7 +1851,7 @@
     [
      "Administration",
      "The office, the bursary and the Head.",
-     "Fees, payroll, admissions and the Head's view."
+     "Fees, payroll, admissions and the Head’s view."
     ],
     [
      "Teacher",
@@ -1871,22 +1871,22 @@
    ],
    "ai": [
     "AI that assists",
-    "AI that answers from your school's own material.",
-    "In Campus with LMS and e-library, pupils and teachers ask questions of the school's lessons and library. Each use is logged, and the school can switch AI off."
+    "AI that answers from your school’s own material.",
+    "In Campus with LMS and e-library, pupils and teachers ask questions of the school’s lessons and library. Each use is logged, and the school can switch AI off."
    ],
    "more_h": "More on the platform"
   },
   "INTEG": {
    "eyebrow": "Integrations",
    "h": "Connect the software your bursar already uses.",
-   "b": "Campus sends journals to Sage Pastel and QuickBooks, issues fiscal receipts through ZIMRA, and matches EcoCash and bank payments to each pupil. Add more from the marketplace.",
-   "market_eye": "Marketplace",
-   "market_h": "Add the rest from the Campus marketplace.",
+   "b": "Campus sends journals to Sage Pastel and QuickBooks, issues fiscal receipts through ZIMRA, and matches EcoCash and bank payments to each pupil. Add more from the Corelith Plugins and Integrations Hub.",
+   "market_eye": "Plugins and integrations",
+   "market_h": "Add the rest from the Corelith Plugins and Integrations Hub.",
    "rows": [
     [
      "Sage Pastel",
      "integrations",
-     "Post the day's journal to Sage Pastel.",
+     "Post the day’s journal to Sage Pastel.",
      "Fees, payroll and purchases go to your Pastel ledger as one journal, mapped to your chart of accounts. Your accountant keeps working in Pastel.",
      "journal_card",
      "Sage Pastel"
@@ -1903,7 +1903,7 @@
      "ZIMRA fiscalisation",
      "pricesheet",
      "Issue fiscal receipts through ZIMRA.",
-     "Every receipt goes through ZIMRA's Fiscalisation Data Management System (FDMS), with the verification code and QR code printed on it.",
+     "Every receipt goes through ZIMRA’s Fiscalisation Data Management System (FDMS), with the verification code and QR code printed on it.",
      "fiscal_card",
      null
     ],
@@ -1927,17 +1927,17 @@
     ],
     [
      "How do we add an integration?",
-     "From the marketplace in the Administration portal. The Head or the bursar adds it, and we help with the setup."
+     "From the Corelith Plugins and Integrations Hub, in the Administration portal. The Head or the bursar adds it, and we help with the setup."
     ],
     [
      "Do the links cost extra?",
-     "No. Pastel, QuickBooks and ZIMRA are part of Campus at US$1 per active pupil per month."
+     "No. Pastel, QuickBooks and ZIMRA are part of Campus at US$1 per active pupil per month."
     ]
    ]
   },
   "PRICE": {
    "eyebrow": "Pricing",
-   "h": "US$1 per active pupil per month.",
+   "h": "US$1 per active pupil per month.",
    "b": "No licence fee and no charge per user. You pay for pupils on the roll in the months the school is open.",
    "calc_h": "Work out your school",
    "calc_b": "Enter the number of pupils on your roll. The figure is what you pay each month the school is open, and the first month is free.",
@@ -1946,7 +1946,7 @@
     [
      "included",
      "Every department",
-     "All nine, from admissions to the Head's view."
+     "All nine, from admissions to the Head’s view."
     ],
     [
      "portals",
@@ -2014,8 +2014,8 @@
    "agenda": [
     [
      "14:00",
-     "The Head's office",
-     "The Head's view, with your figures",
+     "The Head’s office",
+     "The Head’s view, with your figures",
      "Attendance, fees and results for your school, from the records you send us before the visit.",
      "head_card"
     ],
@@ -2030,7 +2030,7 @@
      "15:20",
      "The staffroom",
      "Mark a register with the internet off",
-     "A teacher marks Form 3B on a tablet offline, turns the internet back on and watches it sync.",
+     "A teacher marks Form 3B on a tablet offline, turns the internet back on and watches it sync.",
      "register_card"
     ],
     [
@@ -2149,7 +2149,7 @@
      "Payroll",
      [
       "Run the monthly payroll",
-      "Change a staff member's bank details",
+      "Change a staff member’s bank details",
       "Send payslips"
      ]
     ],
@@ -2158,7 +2158,7 @@
      "Parent portal",
      [
       "Send a guardian their sign-in",
-      "Reset a guardian's password",
+      "Reset a guardian’s password",
       "Link siblings"
      ]
     ],
@@ -2208,7 +2208,7 @@
      ],
      [
       "What we never do",
-      "We do not sell personal data or use it for advertising. AI features read only the school's own material, each use is logged, and the school can switch AI off."
+      "We do not sell personal data or use it for advertising. AI features read only the school’s own material, each use is logged, and the school can switch AI off."
      ],
      [
       "Who can see it",
@@ -2220,7 +2220,7 @@
      ],
      [
       "How long we keep it",
-      "We keep a school's data while it uses Campus. When a school leaves, it takes its export, and we then delete its data."
+      "We keep a school’s data while it uses Campus. When a school leaves, it takes its export, and we then delete its data."
      ],
      [
       "Your rights",
@@ -2234,7 +2234,7 @@
    },
    "data": {
     "title": "Data ownership",
-    "h": "Your school's data stays yours.",
+    "h": "Your school’s data stays yours.",
     "sections": [
      [
       "The data belongs to the school",
@@ -2246,7 +2246,7 @@
      ],
      [
       "If you leave",
-      "Your export stays available until you confirm you have it. We then delete the school's data from Campus."
+      "Your export stays available until you confirm you have it. We then delete the school’s data from Campus."
      ],
      [
       "Who sees what",
@@ -2254,7 +2254,7 @@
      ],
      [
       "Backups",
-      "Campus is backed up every day, so a mistake or a lost device does not lose the school's records."
+      "Campus is backed up every day, so a mistake or a lost device does not lose the school’s records."
      ],
      [
       "Offline copies",
@@ -2262,7 +2262,7 @@
      ],
      [
       "AI",
-      "AI features read only the school's own material. Each use is logged, and the school can switch AI off."
+      "AI features read only the school’s own material. Each use is logged, and the school can switch AI off."
      ]
     ]
    },
@@ -2276,7 +2276,7 @@
      ],
      [
       "Price",
-      "Campus is US$1 per active pupil per month. Campus with LMS and e-library is US$8.99 per active pupil per month and replaces the US$1 rate."
+      "Campus is US$1 per active pupil per month. Campus with LMS and e-library is US$8.99 per active pupil per month and replaces the US$1 rate."
      ],
      [
       "Billing",
@@ -2296,7 +2296,7 @@
      ],
      [
       "Ending the agreement",
-      "Either side can end the agreement as the school's order sets out. The school keeps its export."
+      "Either side can end the agreement as the school’s order sets out. The school keeps its export."
      ],
      [
       "Changes to these terms",
@@ -2346,7 +2346,7 @@
    ]
   ],
   "price": [
-   "Work out your school's monthly cost.",
+   "Work out your school’s monthly cost.",
    "Enter your number of active pupils to see the figure, or download the price sheet to take to your SDC.",
    [
     [
@@ -2434,12 +2434,12 @@
    [
     [
      "Google Workspace",
-     "Sign in with the school's Google accounts",
+     "Sign in with the school’s Google accounts",
      ""
     ],
     [
      "Microsoft 365",
-     "Sign in with the school's Microsoft accounts",
+     "Sign in with the school’s Microsoft accounts",
      ""
     ],
     [
@@ -2454,7 +2454,7 @@
     ],
     [
      "Google Drive",
-     "Files on the pupil's record",
+     "Files on the pupil’s record",
      ""
     ],
     [

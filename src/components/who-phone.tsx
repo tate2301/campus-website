@@ -16,7 +16,7 @@ function mDay(): ReactNode[] {
   const steps: [string, string][] = [["06:50", "On the bus"], ["07:30", "Register"], ["08:06", "Absences home"], ["12:40", "Marks in"], ["16:10", "Home time"]];
   const levels: [string, string, string, string, string[]][] = [
     ["ecd-class.jpg", "center 40%", "ECD to Grade 7", "The class teacher marks one register and writes the report comment for each child.",
-      ["Class registers", "A class teacher's comment on every report", "Parents of the youngest see each day"]],
+      ["Class registers", "A class teacher’s comment on every report", "Parents of the youngest see each day"]],
     ["exam-blue.jpg", "center 40%", "Form 1 to Upper Sixth", "You mark registers by lesson, enter marks by subject, and every subject teacher adds a line to the report.",
       ["Registers by lesson", "Mark sheets by subject", "Exam classes in the holidays"]],
   ];
@@ -34,7 +34,7 @@ function mDay(): ReactNode[] {
       <div style={sx("margin-top:22px")}><PhotoCard photo="teacher-tablet.jpg" pos="center 25%" card={<Tagged tag="Teacher portal"><RegisterCard w={310} /></Tagged>} /></div>
     </Pad>,
     <MRow key="fam" eye="Fees by family" k="fees" h="One statement for every family."
-      b="Brothers and sisters bill to one family account, with the sibling discount applied. Parents pay once, by EcoCash or at the bursary, and the payment lands on each child's account."
+      b="Brothers and sisters bill to one family account, with the sibling discount applied. Parents pay once, by EcoCash or at the bursary, and the payment lands on each child’s account."
       pic={<PhotoCard photo="child-doorway.jpg" pos="center 30%" card={<Tagged tag="Parent portal"><FamilyCard w={326} /></Tagged>} />} />,
     <Pad key="levels">
       <MHead eye="Primary and secondary" k="academics" h="Run ECD and Upper Sixth from the same record." />
@@ -82,7 +82,7 @@ function mBoarding(): ReactNode[] {
       ))}
     </section>,
     <MRow key="fees" eye="Boarding fees" k="fees" h="Boarding and tuition on one account."
-      b="Boarding, tuck and outings bill to the family's account with tuition, in US dollars and ZiG. Guardians pay by EcoCash or bank transfer and see the balance in the portal."
+      b="Boarding, tuck and outings bill to the family’s account with tuition, in US dollars and ZiG. Guardians pay by EcoCash or bank transfer and see the balance in the portal."
       pic={<PhotoCard photo="boys-reading-2.jpg" pos="47% 42%" card={<Tagged tag="Parent portal"><FeeCard w={320} /></Tagged>} />} />,
   ];
 }
@@ -135,7 +135,7 @@ function mPrivate(): ReactNode[] {
       b="Enrolment, fees, results and staffing for the term, from the records the school already keeps. Download it as a PDF for the meeting."
       pic={<PhotoCard photo="seniors-lecture.jpg" pos="center 30%" card={<Tagged tag="Administration portal"><BoardCard w={320} /></Tagged>} />} />,
     <MRow key="phone" eye="Parent portal" k="Parent" h="A portal for every family."
-      b="Attendance, marks, fees and reports reach each family's phone that week, with a line to the class teacher."
+      b="Attendance, marks, fees and reports reach each family’s phone that week, with a line to the class teacher."
       pic={<PhoneOn phone={<ParentPhone k={0.6} />} photo="mother-phone.jpg" pos="65% center" h={560} />} />,
   ];
 }
@@ -144,7 +144,7 @@ function mPrivate(): ReactNode[] {
 function mMission(): ReactNode[] {
   return [
     <MRow key="reg" eye="Day and boarding" k="t-mission" h="Day scholars and boarders on one register."
-      b="One class register shows who goes home and who boards. Boarders also appear on their house's roll call, and fees bill by the type of place."
+      b="One class register shows who goes home and who boards. Boarders also appear on their house’s roll call, and fees bill by the type of place."
       pic={<PlateCard card={<Tagged tag="Teacher portal"><MixedRegisterCard w={310} /></Tagged>} />} />,
     <MRow key="auth" eye="Responsible authority" k="insights" h="The report your church asks for, without retyping."
       b="Enrolment, results, finance and staffing for the responsible authority, built from the records the school keeps every day."

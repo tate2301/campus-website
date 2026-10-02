@@ -9,7 +9,8 @@ export const PLATE = "#f4f5f7", TRAY = "#eceef2", WHITE = "#ffffff", GROUND = "#
 export const OK = "#12805c", OKS = "#e5f4ec", WARN = "#a15c07", WARNS = "#fdf1dc", BAD = "#be123c", BADS = "#fde7ec";
 
 export const SANS = "var(--font-sans)", SERIF = "var(--font-serif)", MONO = "var(--font-mono)", UI = "var(--font-ui)";
-export const NUM = "font-variant-numeric:tabular-nums;";
+/** figures that line up or change: Inter's tabular figures, because General Sans has proportional figures only */
+export const NUM = "font-family:var(--font-ui);font-variant-numeric:tabular-nums;";
 export const DOTS = `background:${GROUND} radial-gradient(#dfe2e8 1px,transparent 1.2px) 0 0/22px 22px`;
 export const SH_CARD = "0 1px 2px rgba(11,12,20,.06), 0 16px 36px -18px rgba(11,12,20,.30)";
 

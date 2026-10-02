@@ -5,7 +5,7 @@ import { CtaSection, DemoBtns, FaqList, PageHero, Rows, SecHead, Wrap } from "@/
 import { CardHtml, HeroPic, MTCard } from "@/components/pictures";
 import { Marketplace } from "@/components/site-cards";
 import { MEnd, MFaq, MGap, MHead, MHero, MRows, PhotoCard, PlateCard } from "@/components/phone";
-import { At, BrandLogo, Ic, OnPlate, PhotoStory, Pmark, Tagged, sx } from "@/components/ds";
+import { At, BrandLogo, Ic, OnPlate, PhotoStory, CorelithLogo, Tagged, sx } from "@/components/ds";
 import { MARKET, SW } from "@/content/copy";
 import { FAINT, GAP, INK, INK2, LINE, MUTED, MX, OK, OKS, PLATE, PX, SANS } from "@/lib/design";
 
@@ -14,12 +14,12 @@ export const metadata: Metadata = { title: "Integrations", description: SW.INTEG
 type IRow = [string, string, string, string, string, string | null];
 const FAQ_H = "What bursars ask about the links.";
 
-/** mobile.marketplace: the integrations screen at phone width */
+/** mobile.marketplace: the Corelith Plugins and Integrations Hub at phone width */
 function PhoneMarketplace() {
   const cats = ["All", ...MARKET.map(([c]) => c)];
   return (
     <div style={sx(`border-radius:20px;background:#fff;box-shadow:0 0 0 1px ${LINE},0 24px 40px -28px rgba(11,12,20,.35);overflow:hidden`)}>
-      <div style={sx("display:flex;align-items:center;gap:10px;padding:14px")}><Pmark s={26} r={7} /><span style={sx(`font:600 15px ${SANS}`)}>Integrations</span></div>
+      <div style={sx("display:flex;align-items:center;gap:10px;padding:14px")}><CorelithLogo s={20} c={INK} /><span style={sx(`font:600 14px ${SANS};white-space:nowrap;padding-left:10px;border-left:1px solid ${LINE}`)}>Plugins and Integrations Hub</span></div>
       <div style={sx("padding:0 14px 12px")}>
         <div style={sx(`display:flex;align-items:center;gap:8px;height:38px;padding:0 12px;border-radius:19px;background:#f2f4f7;font:400 13.5px ${SANS};color:${FAINT}`)}><Ic n="search" s={15} c={MUTED} />Search integrations</div>
       </div>

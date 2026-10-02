@@ -4,7 +4,7 @@
  */
 import type { ReactElement, ReactNode } from "react";
 import { Art } from "./art";
-import { BrandLogo, Card, Cbtn, Chead, Fig, Ic, Lab, Pmark, PortalIcon, Rowl, Status, sx } from "./ds";
+import { BrandLogo, Card, Cbtn, Chead, CorelithLogo, Fig, Ic, Lab, PortalIcon, Rowl, Status, sx } from "./ds";
 import { BAD, BADS, BLUE, FAINT, INK, INK2, LINE, MONO, MUTED, NUM, OK, OKS, SANS, WARN, pyRound } from "@/lib/design";
 import { MARKS } from "@/content/world";
 import { MARKET } from "@/content/copy";
@@ -391,7 +391,7 @@ export const AiCard = ({ w = 340 }: { w?: number }) => (
   <Card w={w}>
     <Chead icon="sparkles" title="Ask the library" meta="Student portal" />
     <AiBub t="Why does a plant cell have a cell wall?" me={true} />
-    <AiBub t="The cell wall keeps the cell's shape and stops it bursting when it takes in water. See page 14 of your notes." me={false} />
+    <AiBub t="The cell wall keeps the cell’s shape and stops it bursting when it takes in water. See page 14 of your notes." me={false} />
     <span style={sx(`display:inline-flex;align-items:center;gap:6px;height:24px;padding:0 9px;border-radius:12px;box-shadow:inset 0 0 0 1px ${LINE};font:500 11.5px ${SANS};color:${INK2};margin-top:8px`)}>
       <Ic n="book-2" s={12} c={MUTED} />Form 2 Science notes · Mr Chari
     </span>
@@ -479,7 +479,7 @@ export const ThreadCard = ({ w = 340 }: { w?: number }) => (
   </Card>
 );
 
-// ---- the integrations marketplace, as the Administration portal shows it -------------------------------
+// ---- the Corelith Plugins and Integrations Hub, as the Administration portal shows it -------------------------------
 /** site_cards.marketplace */
 export function Marketplace({ w = 1200 }: { w?: number }) {
   const cats = ["All", ...MARKET.map(([c]) => c)];
@@ -487,8 +487,8 @@ export function Marketplace({ w = 1200 }: { w?: number }) {
   return (
     <div style={sx(`width:${w}px;border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 0 0 1px ${LINE},0 30px 60px -30px rgba(11,12,20,.35)`)}>
       <div style={sx(`display:flex;align-items:center;gap:14px;padding:16px 22px;border-bottom:1px solid ${LINE}`)}>
-        <Pmark s={28} r={8} />
-        <span style={sx(`font:600 15px ${SANS}`)}>Integrations</span><span style={sx("flex:1")} />
+        <CorelithLogo s={20} c={INK} />
+        <span style={sx(`font:600 15px ${SANS};padding-left:14px;border-left:1px solid ${LINE}`)}>Plugins and Integrations Hub</span><span style={sx("flex:1")} />
         <span style={sx(`display:flex;align-items:center;gap:8px;width:280px;height:36px;padding:0 12px;border-radius:18px;background:#f2f4f7;font:400 13px ${SANS};color:${FAINT}`)}>
           <Ic n="search" s={15} c={MUTED} />Search integrations
         </span>

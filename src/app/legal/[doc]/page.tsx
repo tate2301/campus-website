@@ -41,7 +41,7 @@ function Desktop({ k }: { k: string }) {
               <A key={t} href={`#${anchor(t)}`} style={`display:block;padding:9px 0 9px 14px;border-left:2px solid ${i === 0 ? BLUE : LINE};font:${i === 0 ? "500" : "400"} 14.5px ${SANS};color:${i === 0 ? INK : MUTED}`}>{t}</A>
             ))}
           </nav>
-          <div style={sx("flex:1;max-width:760px")}>
+          <div style={sx("flex:1;max-width:640px")}>
             {L.sections.map(([t, p], i) => (
               <div key={t} id={anchor(t)} style={sx(`padding:${i === 0 ? 0 : 40}px 0 0`)}>
                 <h3 style={sx(`margin:0;font:600 24px/1.2 ${SANS};letter-spacing:-0.015em`)}>{t}</h3>

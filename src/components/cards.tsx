@@ -70,7 +70,7 @@ export const ReportCard = ({ w = 300 }: { w?: number }) => (
 /** ui.head_card: the Head's view */
 export const HeadCard = ({ w = 300 }: { w?: number }) => (
   <Card w={w}>
-    <Chead icon="chart-bar" title="The Head's view" meta="07:58" hue={BLUE} />
+    <Chead icon="chart-bar" title="The Head’s view" meta="07:58" hue={BLUE} />
     <div style={sx("display:grid;grid-template-columns:1fr 1fr;gap:10px")}>
       <div><Lab t="Attendance" /><div style={sx("margin-top:6px")}><Fig v="96.4%" s={22} /></div></div>
       <div><Lab t="Fees collected" /><div style={sx("margin-top:6px")}><Fig v="70.3%" s={22} /></div></div>

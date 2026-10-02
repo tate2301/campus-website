@@ -6,7 +6,7 @@ import { useId, useState, type CSSProperties, type ReactNode } from "react";
  * password from the Administration portal (the guides list "Reset a guardian's password"). So the link opens a line
  * that says so, under the row it sits in. The design has no words for it (NOTES.md).
  */
-export const FORGOT_NOTE = "Your school's Campus administrator resets passwords. Ask them to reset yours.";
+export const FORGOT_NOTE = "Your school’s Campus administrator resets passwords. Ask them to reset yours.";
 
 export function ForgotPasswordRow({ rowStyle, linkStyle, noteStyle, children }: { rowStyle: CSSProperties; linkStyle: CSSProperties; noteStyle: CSSProperties; children: ReactNode }) {
   const [open, setOpen] = useState(false);

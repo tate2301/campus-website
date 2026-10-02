@@ -10,6 +10,7 @@ import { sx } from "@/lib/sx";
  */
 const INK = "#0b0c14", INK2 = "#3b3d47", MUTED = "#6b6d78", LINE = "#e7e9ef", PLATE = "#f4f5f7";
 const SANS = "var(--font-sans)";
+const NUM = "font-family:var(--font-ui);font-variant-numeric:tabular-nums;";
 const SH_CARD = "0 1px 2px rgba(11,12,20,.06), 0 16px 36px -18px rgba(11,12,20,.30)";
 const RATES = [["Campus", 1], ["With LMS", 8.99]] as const;
 
@@ -56,7 +57,7 @@ export function Calculator({ w = 520, id: boxId = "calculator" }: { w?: number |
         <div style={sx(`display:flex;justify-content:space-between;font:400 15px ${SANS};color:${INK2}`)}>
           <span>{`${count(pupils)} active pupils × US$${rate.toFixed(2)}`}</span><span>a month</span>
         </div>
-        <div style={sx(`font:600 44px/1 ${SANS};letter-spacing:-0.03em;margin-top:12px;font-variant-numeric:tabular-nums;`)}>{money(Math.round(pupils * rate * 100) / 100)}</div>
+        <div style={sx(`font:600 44px/1 ${SANS};letter-spacing:-0.03em;margin-top:12px;${NUM}`)}>{money(Math.round(pupils * rate * 100) / 100)}</div>
         <div style={sx("display:flex;gap:8px;margin-top:14px")}><Pill t="First month free" c="#12805c" bg="#e5f4ec" /><Pill t="Holidays US$0" c={INK2} bg="#eef0f3" /></div>
       </div>
     </div>

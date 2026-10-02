@@ -33,7 +33,7 @@ function EntryCard({ w = 250 }: { w?: number }) {
 
 export function MarkJourney({ w = 620, h = 460 }: { w?: number; h?: number }) {
   return (
-    <div className="mark-journey" role="img" aria-label="Ms Sibanda records Tanaka's 71% once; the mark reaches the Head's view, Tanaka's portal and Rudo Moyo's phone."
+    <div className="mark-journey" role="img" aria-label="Ms Sibanda records Tanaka’s 71% once; the mark reaches the Head’s view, Tanaka’s portal and Rudo Moyo’s phone."
       style={sx(`position:relative;width:${w}px;height:${h}px;border-radius:28px;${DOTS};box-shadow:inset 0 0 0 1px #eceef2;overflow:hidden`)}>
       <Art k={`journey:${w}x${h}`} />
       <div style={sx(`position:absolute;left:20px;top:${h - 236}px`)}><EntryCard w={250} /></div>
